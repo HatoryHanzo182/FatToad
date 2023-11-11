@@ -11,7 +11,7 @@ public class MainServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        //req.setAttribute("page-body", "_main.jsp");
+        req.setAttribute("page-body", "_main.jsp");
         req.getRequestDispatcher("WEB-INF/_main.jsp").forward(req, resp);
     }
 }

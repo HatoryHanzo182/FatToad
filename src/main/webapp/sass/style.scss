@@ -1,31 +1,14 @@
-/* =================================
-------------------------------------
-  Game Warrior Template
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-
 $color1: #ffb320;
 $color2: #131313;
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-html,
-body {
+html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 500;
   color: #131313;
@@ -65,10 +48,7 @@ img {
   max-width: 100%;
 }
 
-input,
-select,
-button,
-textarea {
+input, select, button, textarea {
   &:focus {
     outline: none;
   }
@@ -76,14 +56,13 @@ textarea {
 
 a:hover {
 }
-a:hover,
-a:focus {
+
+a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
 
-ul,
-ol {
+ul, ol {
   padding: 0;
   margin: 0;
 }
@@ -124,8 +103,6 @@ ol {
     color: #e0e3e4;
   }
 }
-
-
 
 /*---------------------
   Commom elements
