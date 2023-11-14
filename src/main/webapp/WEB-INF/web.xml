@@ -5,19 +5,22 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <filter>
-    <filter-name>IocFilter</filter-name>
+    <filter-name>GuiceFilter</filter-name>
     <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>IocFilter</filter-name>
+    <filter-name>GuiceFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <listener>
+    <listener-class>reddit.fat_toad.ioc.GuiceServletConfig</listener-class>
+  </listener>
   <servlet>
-    <servlet-name>MainServlet</servlet-name>
-    <servlet-class>reddit.fat_toad.servlets.MainServlet</servlet-class>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>reddit.fat_toad.servlets.HomeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>MainServlet</servlet-name>
+    <servlet-name>HomeServlet</servlet-name>
     <url-pattern></url-pattern>
   </servlet-mapping>
 </web-app>

@@ -1,2 +1,14 @@
-package reddit.fat_toad.ioc;public class GuiceServletConfig {
+package reddit.fat_toad.ioc;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import com.google.inject.servlet.GuiceServletContextListener;
+
+public class GuiceServletConfig extends GuiceServletContextListener
+{
+    @Override
+    protected Injector getInjector()
+    {
+        return Guice.createInjector(new RouterModule());
+    }
 }
