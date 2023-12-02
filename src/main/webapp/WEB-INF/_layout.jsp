@@ -38,8 +38,8 @@
                 <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/home">Home</a></li>
                 <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
                 <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
-                <li><a href="community.html">Forums</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><%= "forums.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/forums">Forums</a></li>
+                <li><%= "contact.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -54,15 +54,14 @@
             <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/">Home</a></li>
             <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
             <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
-            <li><a href="community.html">Forums</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><%= "forums.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/forums">Forums</a></li>
+            <li><%= "contact.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/contact">Contact</a></li>
         </ul>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         <p class="copyright">
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            Graduate work &copy;2024 / For computer academy
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a href="https://poltava.itstep.org/?gclid=Cj0KCQiAyKurBhD5ARIsALamXaE6FzK6yQEpyvukcvDa0CBz9MNHpE_bRvWqcc1L9d8D3dCYRhxCRuoaArCwEALw_wcB" target="_blank">StepIT</a>
         </p>
     </div>
 </footer>

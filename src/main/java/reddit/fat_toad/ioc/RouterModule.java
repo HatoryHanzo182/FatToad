@@ -1,9 +1,7 @@
 package reddit.fat_toad.ioc;
 
 import com.google.inject.servlet.ServletModule;
-import reddit.fat_toad.servlets.BlogsServlet;
-import reddit.fat_toad.servlets.HomeServlet;
-import reddit.fat_toad.servlets.GamesServlet;
+import reddit.fat_toad.servlets.*;
 
 public class RouterModule extends ServletModule
 {
@@ -14,5 +12,7 @@ public class RouterModule extends ServletModule
         serve("/home").with(HomeServlet.class);
         serve("/games").with(GamesServlet.class);
         serve("/blogs").with(BlogsServlet.class);
+        serve("/forums").with(ForumsServlet.class);
+        serve("/contact").with(ContactServlet.class);
     }
 }
