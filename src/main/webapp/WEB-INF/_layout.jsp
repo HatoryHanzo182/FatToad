@@ -37,7 +37,7 @@
             <ul>
                 <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/home">Home</a></li>
                 <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
-                <li><a href="categories.html">Blog</a></li>
+                <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
                 <li><a href="community.html">Forums</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -53,7 +53,7 @@
         <ul class="footer-menu">
             <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/">Home</a></li>
             <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
-            <li><a href="categories.html">Blog</a></li>
+            <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
             <li><a href="community.html">Forums</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>

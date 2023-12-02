@@ -1,52 +1,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%String context = request.getContextPath();%>
 <!-- Page Preloder -->
-<div id="preloder">
-    <div class="loader"></div>
-</div>
-
-<!-- Header section -->
-<header class="header-section">
-    <div class="container">
-        <!-- logo -->
-        <a class="site-logo" href="index.html">
-            <img src="img/logo.png" alt="">
-        </a>
-        <div class="user-panel">
-            <a href="#">Login</a>  /  <a href="#">Register</a>
-        </div>
-        <!-- responsive -->
-        <div class="nav-switch">
-            <i class="fa fa-bars"></i>
-        </div>
-        <!-- site menu -->
-        <nav class="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="review.html">Games</a></li>
-                <li><a href="categories.html">Blog</a></li>
-                <li><a href="community.html">Forums</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<!-- Header section end -->
-
-
+<div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section -->
 <div class="latest-news-section">
     <div class="ln-title">Latest News</div>
     <div class="news-ticker">
         <div class="news-ticker-contant">
-            <div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-            <div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
-            <div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="nt-item"><span class="new">new</span>Embark on an exciting fantasy adventure! Join us today! </div>
+            <div class="nt-item"><span class="strategy">strategy</span>A new strategy game hits the market! Plan your moves and conquer battles. </div>
+            <div class="nt-item"><span class="racing">racing</span> Epic races have begun! Prepare your cars for insane speed and sharp turns. </div>
         </div>
     </div>
 </div>
-<!-- Latest news section end -->
-
-
 <!-- Page info section -->
 <section class="page-info-section set-bg" data-setbg="img/page-top-bg/1.jpg">
     <div class="pi-content">
@@ -54,15 +20,16 @@
             <div class="row">
                 <div class="col-xl-5 col-lg-6 text-white">
                     <h2>Video Gallery</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</p>
+                    <p>
+                        Every post here is an immersion into a new world where games turn into art and game characters become real heroes.
+                        We explore fascinating stories, test the most advanced technologies and make immersion in gaming universes
+                        an unforgettable experience.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Page info section -->
-
-
 <!-- Page section -->
 <section class="page-section recent-game-page spad">
     <div class="container">
@@ -75,8 +42,8 @@
                                 <div class="cata new">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Suspendisse ut justo tem por, rutrum</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+                                <h5>BLIZZARD</h5>
+                                <p>BLIZZCON 2023 TICKETS ON-SALE JULY 8 AND JULY 22!</p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
                                     <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
@@ -91,7 +58,7 @@
                                 <div class="cata racing">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
+                                <h5>Doom </h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -107,7 +74,7 @@
                                 <div class="cata adventure">Adventure</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
+                                <h5>Doom</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -123,7 +90,7 @@
                                 <div class="cata new">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Suspendisse ut justo tem por, rutrum</h5>
+                                <h5>World of Warcraft</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -139,7 +106,7 @@
                                 <div class="cata racing">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
+                                <h5>Blizzard </h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -155,7 +122,7 @@
                                 <div class="cata adventure">Adventure</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
+                                <h5>GTA5 online </h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -171,7 +138,7 @@
                                 <div class="cata new">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Suspendisse ut justo tem por, rutrum</h5>
+                                <h5>PUBG is it already??</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -187,7 +154,7 @@
                                 <div class="cata racing">racing</div>
                             </div>
                             <div class="rgi-content">
-                                <h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
+                                <h5>Doom hotfix</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
                                 <a href="#" class="comment">3 Comments</a>
                                 <div class="rgi-extra">
@@ -297,4 +264,3 @@
         </div>
     </div>
 </section>
-<!-- Page section end -->
