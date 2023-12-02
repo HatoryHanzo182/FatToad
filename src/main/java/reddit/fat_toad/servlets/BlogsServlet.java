@@ -1,2 +1,4 @@
-package reddit.fat_toad.servlets;public class BlogsServlet {
+package reddit.fat_toad.servlets;
+
+public class BlogsServlet {
 }
