@@ -15,6 +15,7 @@ public class GamesServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         req.setAttribute("page-body", "games.jsp");
+        req.setAttribute("ShowMenuAndFooter", true);
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

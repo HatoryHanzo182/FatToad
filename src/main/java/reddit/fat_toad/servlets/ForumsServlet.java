@@ -14,6 +14,7 @@ public class ForumsServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         req.setAttribute("page-body", "forums.jsp");
+        req.setAttribute("ShowMenuAndFooter", true);
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

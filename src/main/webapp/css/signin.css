@@ -1,0 +1,19 @@
+.marking {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    width: 30%;
+    border: 2px solid #000000;
+}
+
+.block2 {
+    width: 70%;
+    height: 100vh;
+    border: 1px solid #000;
+}
+
+.block2 > img {
+    max-height: 100%;
+}
