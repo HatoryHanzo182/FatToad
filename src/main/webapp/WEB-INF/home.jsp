@@ -5,7 +5,7 @@
 <!-- Hero section. -->
 <section class="hero-section">
     <div class="hero-slider owl-carousel">
-        <div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
+        <div class="hs-item set-bg" data-setbg="img/Slider1ForHomePage.png">
             <div class="hs-text">
                 <div class="container">
                     <h2>The Best <span>Games</span> Out There</h2>
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
+        <div class="hs-item set-bg" data-setbg="img/Slider2ForHomePage.png">
             <div class="hs-text">
                 <div class="container">
                     <h2>The Best <span>Games</span> Out There</h2>
@@ -28,6 +28,18 @@
                         and join discussions with other players. Do you like action, adventure or<br>
                         strategy games, our platform has something for every gaming enthusiast. stay tuned<br>
                         Find out news about upcoming games and plunge into the gaming universe.<br>
+                    </p>
+                    <a href="#" class="site-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hs-item set-bg" data-setbg="img/Slider3ForHomePage.png">
+            <div class="hs-text">
+                <div class="container">
+                    <h2>The Best <span>Games</span> Out There</h2>
+                    <p>
+                        Let's discuss games, share impressions and find new friends for the player.<br>
+                        Welcome to our virtual community!
                     </p>
                     <a href="#" class="site-btn">Read More</a>
                 </div>
@@ -52,7 +64,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 p-0">
                 <div class="feature-item set-bg" data-setbg="img/features/1.jpg">
-                    <span class="cata new">new</span>
+                    <span class="cata new">adventures</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">World of warcraft</a></h5>
                         <p>Hit the road and level up your characters up to level 20 for FREE!. </p>
@@ -61,31 +73,31 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/2.jpg">
-                    <span class="cata strategy">strategy</span>
+                <div class="feature-item set-bg" data-setbg="img/features/2.png">
+                    <span class="cata strategy">new</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">Overwatch</a></h5>
-                        <p>THE FUTURE IS WORTH FIGHTING FOR DYNAMIC TEAM GAME • PLAY FOR FREE</p>
+                        <h5><a href="#">THE WAR HAS CHANGED</a></h5>
+                        <p>In the direct sequel to the legendary game Call of Duty: Modern Warfare II, Captain Price and OTG-141 confront the most terrible threat.</p>
                         <a href="#" class="fi-comment">2 Comments</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/3.jpg">
-                    <span class="cata new">new</span>
+                <div class="feature-item set-bg" data-setbg="img/features/3.png">
+                    <span class="cata new">adventures</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">PUBG</a></h5>
-                        <p>Letter from the Developers: Strengthening the Authentication System for Ranked Games. </p>
+                        <h5><a href="#">Uncharted 4</a></h5>
+                        <p>This is the finale of the Nathan Drake saga, so the details of the story are kept in the strictest confidence. “But the most important thing to say right now is that Uncharted 4 is a story about family,” Eric says.</p>
                         <a href="#" class="fi-comment">22 Comments</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/4.jpg">
-                    <span class="cata racing">racing</span>
+                <div class="feature-item set-bg" data-setbg="img/features/4.png">
+                    <span class="cata racing">shooter</span>
                     <div class="fi-content text-white">
-                        <h5><a href="#">Forza Horizon 5</a></h5>
-                        <p>An unforgettable adventure awaits you in Horizon! Explore the ever-changing open world landscapes of Mexico with limitless driving in hundreds of the world's best cars </p>
+                        <h5><a href="#">IT'S IN OUR BLOOD!</a></h5>
+                        <p>Discover for yourself the revival of the entire world of Mortal Kombat, created by the god of fire Liu Kang. Mortal Kombat 1 begins a new era of the cult franchise with a new combat system, attack modes and finishing moves!</p>
                         <a href="#" class="fi-comment">12 Comments</a>
                     </div>
                 </div>
@@ -103,12 +115,12 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.jpg">
+                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
                         <div class="cata new">new</div>
                     </div>
                     <div class="rgi-content">
-                        <h5>BLIZZARD</h5>
-                        <p>BLIZZCON 2023 TICKETS ON-SALE JULY 8 AND JULY 22! </p>
+                        <h5>Amazing solution from NetherRealm Studios</h5>
+                        <p>An interesting and non-standard solution to add new characters from the developers.</p>
                         <a href="#" class="comment">278 Comments</a>
                         <div class="rgi-extra">
                             <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
@@ -119,12 +131,12 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.jpg">
-                        <div class="cata racing">racing</div>
+                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+                        <div class="cata new">new</div>
                     </div>
                     <div class="rgi-content">
-                        <h5>DOOM</h5>
-                        <p>Halo 3 Refueled is out now, and it's full of your old favorites... or at least the maps that arguably made the biggest impact since Halo 3. </p>
+                        <h5>RDR2 - New servers</h5>
+                        <p>Immerse yourself in the world of the wild west on new servers.</p>
                         <a href="#" class="comment">3 Comments</a>
                         <div class="rgi-extra">
                             <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
@@ -135,12 +147,12 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.jpg">
-                        <div class="cata adventure">Adventure</div>
+                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
+                        <div class="cata new">new</div>
                     </div>
                     <div class="rgi-content">
-                        <h5>New locations</h5>
-                        <p>We'll find out everything soon. </p>
+                        <h5>PlayStation users are having their accounts blocked en masse and permanently: what's happening</h5>
+                        <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
                         <a href="#" class="comment">3 Comments</a>
                         <div class="rgi-extra">
                             <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>

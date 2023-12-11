@@ -47,7 +47,7 @@
     </div>
     <div class="art-block">
         <div class="hero-slider owl-carousel">
-            <div class="hs-item set-bg" data-setbg="img/Toad-background-signin.jpg">
+            <div class="hs-item set-bg" data-setbg="img/ToadBackgroundSignin.jpg">
                 <div class="hs-text">
                     <div class="container">
                         <h2>The Best <span>Games</span> Out There</h2>
