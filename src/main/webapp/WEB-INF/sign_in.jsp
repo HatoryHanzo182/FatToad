@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%String context = request.getContextPath();%>
 <div class="marking">
-    <div class="block">
+    <div class="authorization-block">
+        <div>
         <form class="form">
             <div class="flex-column"><label>Email</label></div>
             <div class="inputForm">
@@ -42,8 +43,9 @@
                 </button>
             </div>
         </form>
+        </div>
     </div>
-    <div class="block2">
+    <div class="art-block">
         <div class="hero-slider owl-carousel">
             <div class="hs-item set-bg" data-setbg="img/Toad-background-signin.jpg">
                 <div class="hs-text">

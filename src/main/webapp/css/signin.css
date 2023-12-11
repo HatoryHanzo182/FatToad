@@ -4,16 +4,13 @@
     flex-direction: row;
 }
 
-.block {
-    width: 30%;
-}
-
-.block2 {
-    width: 70%;
-    height: 100vh;
-}
-
 /*--====== Login and registration style. ======-*/
+.authorization-block {
+    padding-top: 8%;
+    width: 30%;
+    z-index: 2;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -23,6 +20,7 @@
     width: 450px;
     border-radius: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 2;
 }
 
 ::placeholder {
@@ -131,7 +129,62 @@
 }
 
 /*--====== Art design. ======-*/
+.art-block {
+    width: 70%;
+}
+
 .greeting-text {
     font-size: 16px;
-    color: black;
+}
+
+/*--====== Media queries for responsive design. ======-*/
+@media screen and (max-width: 1511px) {
+    .authorization-block {
+        width: 40%;
+    }
+
+    .art-block {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    .authorization-block {
+        width: 50%;
+    }
+
+    .art-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .authorization-block {
+        width: 60%;
+    }
+
+    .art-block {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .authorization-block {
+        width: 70%;
+    }
+
+    .art-block {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .authorization-block {
+        padding-left: 13%;
+        width: 100%;
+    }
+
+    .art-block {
+        display: none;
+    }
 }

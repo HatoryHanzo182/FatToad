@@ -23,7 +23,7 @@
     <title>Fat toad</title>
 </head>
 <!-- Header section. -->
-<% if (request.getAttribute("ShowMenuAndFooter") != null && (Boolean) request.getAttribute("ShowMenuAndFooter"))
+<% if (request.getAttribute("ShowMenu") != null && (Boolean) request.getAttribute("ShowMenu"))
 { %>
     <header class="header-section">
         <div class="container">
@@ -52,7 +52,7 @@
     <jsp:include page="<%=page_body%>"/>
 </body>
 <!-- Footer section. -->
-<% if (request.getAttribute("ShowMenuAndFooter") != null && (Boolean) request.getAttribute("ShowMenuAndFooter"))
+<% if (request.getAttribute("ShowFooter") != null && (Boolean) request.getAttribute("ShowFooter"))
 { %>
     <footer class="footer-section">
         <div class="container">

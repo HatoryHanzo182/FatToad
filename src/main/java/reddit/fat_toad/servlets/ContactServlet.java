@@ -14,7 +14,8 @@ public class ContactServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         req.setAttribute("page-body", "contact.jsp");
-        req.setAttribute("ShowMenuAndFooter", true);
+        req.setAttribute("ShowMenu", true);
+        req.setAttribute("ShowFooter", true);
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

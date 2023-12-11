@@ -1,7 +1,6 @@
 package reddit.fat_toad.servlets;
 
 import com.google.inject.Singleton;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +14,8 @@ public class SignInServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         req.setAttribute("page-body", "sign_in.jsp");
-        req.setAttribute("ShowMenuAndFooter", false);
+        req.setAttribute("ShowMenu", false);
+        req.setAttribute("ShowFooter", false);
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }
