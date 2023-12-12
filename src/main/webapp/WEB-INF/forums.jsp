@@ -19,7 +19,11 @@
       <div class="row">
         <div class="col-xl-5 col-lg-6 text-white">
           <h2>Our Community</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</p>
+          <p>
+            "Are there any favorable discounts on Steam? Battle Royale or MMO - which is top today?
+            How do you rate the latest release? Get ready, friends, for a virtual storm of comments!
+            Discussions begin here, and your every word can become a reason for heated debate.
+          </p>
         </div>
       </div>
     </div>

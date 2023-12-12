@@ -106,9 +106,9 @@
     </div>
 </section>
 <!-- Recent game section  -->
-<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+<section class="recent-game-section spad set-bg" data-setbg="img/review-bg-2.png">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title text-white">
             <div class="cata new">new</div>
             <h2>Recent Games</h2>
         </div>
@@ -173,16 +173,16 @@
                 <div class="tournament-item mb-4 mb-lg-0">
                     <div class="ti-notic">Premium Tournament</div>
                     <div class="ti-content">
-                        <div class="ti-thumb set-bg" data-setbg="img/tournament/1.jpg"></div>
+                        <div class="ti-thumb set-bg" data-setbg="img/tournament/1.png"></div>
                         <div class="ti-text">
                             <h4>World Of WarCraft</h4>
                             <ul>
-                                <li><span>Tournament Beggins:</span> June 20, 2023</li>
-                                <li><span>Tounament Ends:</span> July 01, 2023</li>
-                                <li><span>Participants:</span> 10 teams</li>
-                                <li><span>Tournament Author:</span> Admin</li>
+                                <li><span>Tournament Beggins:</span> 11.12.2023</li>
+                                <li><span>Tounament Ends:</span> 26.12.2023</li>
+                                <li><span>Participants:</span>11 teams</li>
+                                <li><span>Tournament Author:</span>European Pro League Season 15</li>
                             </ul>
-                            <p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+                            <p><span>Prizes:</span> 1st place $20000, 2nd place: $10000, 3rd place: $5000</p>
                         </div>
                     </div>
                 </div>
@@ -191,14 +191,14 @@
                 <div class="tournament-item">
                     <div class="ti-notic">Premium Tournament</div>
                     <div class="ti-content">
-                        <div class="ti-thumb set-bg" data-setbg="img/tournament/2.jpg"></div>
+                        <div class="ti-thumb set-bg" data-setbg="img/tournament/2.png"></div>
                         <div class="ti-text">
-                            <h4>DOOM</h4>
+                            <h4>Warcraft III</h4>
                             <ul>
-                                <li><span>Tournament Beggins:</span> June 20, 2023</li>
-                                <li><span>Tounament Ends:</span> July 01, 2023</li>
-                                <li><span>Participants:</span> 10 teams</li>
-                                <li><span>Tournament Author:</span> Admin</li>
+                                <li><span>Tournament Beggins:</span> 04.10.23 </li>
+                                <li><span>Tounament Ends:</span> 04.12.23 </li>
+                                <li><span>Participants:</span> 6 teams</li>
+                                <li><span>Tournament Author:</span> Esports</li>
                             </ul>
                             <p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
                         </div>
@@ -218,52 +218,57 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/1.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/1.png">
+                        <div class="score yellow">8.3</div>
                     </div>
                     <div class="review-text">
-                        <h5>Assassin’’s Creed</h5>
+                        <h5>Alan Wake 2</h5>
                         <p>
-                            It's hard to believe, but in a few months Assassin's Creed will turn 15 years old! During this time,<br>
-                            Ubisoft turned the series into a huge media franchise: with comics, books and even a feature film
-                            starring Michael Fassbender.<br>
+                            Popular New York writer Alan Wake went missing in 2010. Vacationing with his wife, Alice Wake,
+                            in the Pacific Northwest
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/2.jpg">
-                        <div class="score purple">9.5</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/2.png">
+                        <div class="score purple">9.0</div>
                     </div>
                     <div class="review-text">
-                        <h5>Doom</h5>
+                        <h5>Mortal Kombat 1</h5>
                         <p>
-                            Court documents in the US Federal Trade Commission (FTC) case against the Microsoft-Activision Blizzard <br>
-                            deal revealed, among other things, the game release schedule of Bethesda Softworks.
+                            As for the story campaign, everything is relatively traditional.
+                            You shouldn’t expect any revelations from her, but it’s interesting to see what kind of mess
+                            they’ve stirred up there once again.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/3.jpg">
-                        <div class="score green">9.1</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/3.png">
+                        <div class="score green">8.9</div>
                     </div>
                     <div class="review-text">
-                        <h5>Overwatch</h5>
-                        <p>The eSports scene will be reconstructed.</p>
+                        <h5>Resident Evil 4</h5>
+                        <p>The release was a great success, with players responding generally positively.
+                            What has changed in these 17 years.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/4.jpg">
-                        <div class="score pink">9.7</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/4.png">
+                        <div class="score pink">7.6</div>
                     </div>
                     <div class="review-text">
-                        <h5>GTA</h5>
-                        <p>Take the chance to earn 2X GTA$ and RP on Short Trips and Security Contracts.</p>
+                        <h5>Hogwarts Legacy</h5>
+                        <p>
+                            An exciting open-world role-playing game set in the magical world first introduced in the
+                            Harry Potter books.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -281,9 +286,10 @@
                 <div class="footer-logo text-white">
                     <img src="<%=context%>/img/footer-logo.png" alt="">
                     <p>
-                        We are pleased to inform you about the release of update 1.19 for our game.<br>
-                        This update includes many new features and improvements that will make your gaming<br>
-                        experience even more fun and exciting.</p>
+                        We would like to express our deep gratitude to you for your dedication and interest in
+                        our publications. Thanks to you, our blog becomes a place where like-minded people
+                        who appreciate the world of video games and are deeply immersed in gaming culture gather.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -291,30 +297,26 @@
                     <h4 class="fw-title">Latest Posts</h4>
                     <div class="latest-blog">
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.jpg"></div>
+                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.png"></div>
                             <div class="lb-content">
-                                <div class="lb-date">June 21, 2023</div>
-                                <p>Join this epic battle for survival and test your skills in a fight where only the best will emerge victorious. </p>
+                                <div class="lb-date">December 12, 2023</div>
+                                <p>Mercer and Gall. Best friends. Legendary thieves. Brothers in the Guild and the Nightingale's oath. </p>
                                 <a href="#" class="lb-author">By Admin</a>
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.jpg"></div>
+                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.png"></div>
                             <div class="lb-content">
-                                <div class="lb-date">June 21, 2023</div>
-                                <p>An epic battle royale adventure </p>
+                                <div class="lb-date">December 12, 2023</div>
+                                <p>Completing The Witcher 3 100% is a real test of perseverance. </p>
                                 <a href="#" class="lb-author">By Admin</a>
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.jpg"></div>
+                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.png"></div>
                             <div class="lb-content">
-                                <div class="lb-date">June 21, 2023</div>
-                                <p>
-                                    Since its launch, WoW has captured the hearts of millions of gamers thanks<br>
-                                    to its rich storyline, countless quests, powerful worlds,<br>
-                                    and unparalleled multiplayer interactions.
-                                </p>
+                                <div class="lb-date">December 12, 2023</div>
+                                <p>The first truly cool Spider-Man game in many years.</p>
                                 <a href="#" class="lb-author">By Admin</a>
                             </div>
                         </div>
@@ -328,29 +330,49 @@
                         <div class="tc-item">
                             <div class="tc-thumb set-bg" data-setbg="img/authors/1.jpg"></div>
                             <div class="tc-content">
-                                <p><a href="#">James Smith</a> <span>on</span>  I love this site</p>
-                                <div class="tc-date">June 22, 2023</div>
+                                <p>
+                                    <a href="#">James Smith</a>
+                                    <span>on</span>
+                                     “I just finished another quest in Fallout and I can say that my character now feels
+                                    like a real survivor in a post-apocalyptic world. In real life,
+                                    I started looking at every empty can as a potential resource for crafting.
+                                </p>
+                                <div class="tc-date">December 12, 2023</div>
                             </div>
                         </div>
                         <div class="tc-item">
                             <div class="tc-thumb set-bg" data-setbg="img/authors/2.jpg"></div>
                             <div class="tc-content">
-                                <p><a href="#">Donald Trump</a> <span>on</span>  I don’t know what to write</p>
-                                <div class="tc-date">June 21, 2023</div>
+                                <p>
+                                    <a href="#">Donald Trump</a>
+                                    <span>on</span>
+                                    I finished Uncharted and honestly,
+                                    I feel like a mixture of Indiana Jones and a superhero.
+                                </p>
+                                <div class="tc-date">December 12, 2023</div>
                             </div>
                         </div>
                         <div class="tc-item">
                             <div class="tc-thumb set-bg" data-setbg="img/authors/3.jpg"></div>
                             <div class="tc-content">
-                                <p><a href="#">James Staitment</a> <span>on</span>  Something like that yes</p>
-                                <div class="tc-date">June 23, 2023</div>
+                                <p><a href="#">James Staitment</a>
+                                    <span>on</span>
+                                    I've completed a few races in Need for Speed, and to be honest,
+                                    my car in real life now doesn't seem fast enough to me.
+                                </p>
+                                <div class="tc-date">December 12, 2023</div>
                             </div>
                         </div>
                         <div class="tc-item">
                             <div class="tc-thumb set-bg" data-setbg="img/authors/4.jpg"></div>
                             <div class="tc-content">
-                                <p><a href="#">Jared Smith</a> <span>on</span>  WoW</p>
-                                <div class="tc-date">June 01, 2023</div>
+                                <p>
+                                    <a href="#">Jared Smith</a>
+                                    <span>on</span>
+                                    Honestly, I'm disappointed with my experience with Ubisoft games.
+                                    Recent releases tend to come out with a lot of bugs and technical problems.
+                                </p>
+                                <div class="tc-date">December 12, 2023</div>
                             </div>
                         </div>
                     </div>

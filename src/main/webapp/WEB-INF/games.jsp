@@ -173,7 +173,7 @@
     </div>
 </section>
 <!-- Review section -->
-<section class="review-section review-dark spad set-bg" data-setbg="img/review-bg-2.jpg">
+<section class="review-section review-dark spad set-bg" data-setbg="img/recent-game-bg.png">
     <div class="container">
         <div class="section-title text-white">
             <div class="cata new">new</div>
@@ -182,52 +182,57 @@
         <div class="row text-white">
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/1.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/1.png">
+                        <div class="score yellow">8.3</div>
                     </div>
                     <div class="review-text">
-                        <h5>Assasin’’s Creed</h5>
+                        <h5>Alan Wake 2</h5>
                         <p>
-                            It's hard to believe, but in a few months Assassin's Creed will turn 15 years old! During this time,<br>
-                            Ubisoft turned the series into a huge media franchise: with comics, books and even a feature film
-                            starring Michael Fassbender.<br>
+                            Popular New York writer Alan Wake went missing in 2010. Vacationing with his wife, Alice Wake,
+                            in the Pacific Northwest
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/2.jpg">
-                        <div class="score purple">9.5</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/2.png">
+                        <div class="score purple">9.0</div>
                     </div>
                     <div class="review-text">
-                        <h5>Doom</h5>
+                        <h5>Mortal Kombat 1</h5>
                         <p>
-                            Court documents in the US Federal Trade Commission (FTC) case against the Microsoft-Activision Blizzard <br>
-                            deal revealed, among other things, the game release schedule of Bethesda Softworks.
+                            As for the story campaign, everything is relatively traditional.
+                            You shouldn’t expect any revelations from her, but it’s interesting to see what kind of mess
+                            they’ve stirred up there once again.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/3.jpg">
-                        <div class="score green">9.1</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/3.png">
+                        <div class="score green">8.9</div>
                     </div>
                     <div class="review-text">
-                        <h5>Overwatch</h5>
-                        <p>The eSports scene will be reconstructed.</p>
+                        <h5>Resident Evil 4</h5>
+                        <p>The release was a great success, with players responding generally positively.
+                            What has changed in these 17 years.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/4.jpg">
-                        <div class="score pink">9.7</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/4.png">
+                        <div class="score pink">7.6</div>
                     </div>
                     <div class="review-text">
-                        <h5>GTA</h5>
-                        <p>Take the chance to earn 2X GTA$ and RP on Short Trips and Security Contracts.</p>
+                        <h5>Hogwarts Legacy</h5>
+                        <p>
+                            An exciting open-world role-playing game set in the magical world first introduced in the
+                            Harry Potter books.
+                        </p>
                     </div>
                 </div>
             </div>

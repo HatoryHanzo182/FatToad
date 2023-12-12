@@ -15,7 +15,7 @@ public class SignInServlet extends HttpServlet
     {
         req.setAttribute("page-body", "sign_in.jsp");
         req.setAttribute("ShowMenu", false);
-        req.setAttribute("ShowFooter", false);
+        req.setAttribute("ShowFooter", true);
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

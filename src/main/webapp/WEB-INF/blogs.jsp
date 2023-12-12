@@ -14,12 +14,12 @@
     </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="img/page-top-bg/1.jpg">
+<section class="page-info-section set-bg" data-setbg="img/page-top-bg/1.png">
     <div class="pi-content">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 text-white">
-                    <h2>Video Gallery</h2>
+                    <h2>Blog Gallery</h2>
                     <p>
                         Every post here is an immersion into a new world where games turn into art and game characters become real heroes.
                         We explore fascinating stories, test the most advanced technologies and make immersion in gaming universes

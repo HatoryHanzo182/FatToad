@@ -13,15 +13,17 @@
     </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="img/page-top-bg/5.jpg">
+<section class="page-info-section set-bg" data-setbg="img/page-top-bg/5.png">
     <div class="pi-content">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 text-white">
                     <h2>Contact us</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada
-                        lorem maximus mauris scelerisque, at rutrum nulla dictum.
+                        If you have questions, suggestions, or just want to share your opinion,
+                        we are always glad to hear from you. Contact us using the form below and let's share our passion
+                        for global gaming. Your opinion is important to us, and we are always ready for new adventures
+                        with you!”
                     </p>
                 </div>
             </div>
@@ -38,8 +40,8 @@
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="comment-title">Contact us</h4>
                 <p>
-                    Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feug iat bibendum orci,
-                    non elementum urna. Cras sit amet sapien aliquam.
+                    We are open for communication 24/7. Your opinion shapes our community, so let's create something
+                    successful together. Write to us and let the conversation begin!”
                 </p>
                 <div class="row">
                     <div class="col-md-9">

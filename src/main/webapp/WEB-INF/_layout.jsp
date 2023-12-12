@@ -65,7 +65,7 @@
             </ul>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             <p class="copyright">
-                Graduate work &copy;2024 / For computer academy
+                Coursework &copy;2024 / For computer academy
                 <i class="fa fa-heart-o" aria-hidden="true"></i>
                 <a href="https://poltava.itstep.org/?gclid=Cj0KCQiAyKurBhD5ARIsALamXaE6FzK6yQEpyvukcvDa0CBz9MNHpE_bRvWqcc1L9d8D3dCYRhxCRuoaArCwEALw_wcB" target="_blank">StepIT</a>
             </p>
@@ -78,4 +78,6 @@
 <script src="<%=context%>/js/owl.carousel.min.js"></script>
 <script src="<%=context%>/js/jquery.marquee.min.js"></script>
 <script src="<%=context%>/js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

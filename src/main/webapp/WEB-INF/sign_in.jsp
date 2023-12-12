@@ -50,7 +50,7 @@
             <div class="hs-item set-bg" data-setbg="img/ToadBackgroundSignin.jpg">
                 <div class="hs-text">
                     <div class="container">
-                        <h2>The Best <span>Games</span> Out There</h2>
+                        <h2><span>Join</span> the @Fat_Toad</h2>
                         <p class="greeting-text">
                             Dive into the world of exciting games! Discover the latest releases, read reviews,<br>
                             and join discussions with other players. Do you like action, adventure or<br>
