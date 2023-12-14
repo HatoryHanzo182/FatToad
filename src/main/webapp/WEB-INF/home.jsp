@@ -47,6 +47,12 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+
 <!-- Latest news section. -->
 <div class="latest-news-section">
     <div class="ln-title">Latest News</div>
@@ -58,6 +64,15 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
 <!-- Feature section. -->
 <section class="feature-section spad">
     <div class="container">
