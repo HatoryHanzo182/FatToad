@@ -1,6 +1,6 @@
 package reddit.fat_toad.db;
 
-public class LastNewsLine
+public class LastNewsLineModel
 {
     private String _status;
     private String _news;
