@@ -16,17 +16,15 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 @Singleton
-public class DB_Connect
+public class DB
 {
     private static String _connection_string = "";
     private static MongoClientSettings _settings;
     private static ArrayList<LastNewsLineModel> _last_news_line;
 
-    public DB_Connect()
+    public DB()
     {
-        BuildConnection();
-
-        _last_news_line = GetLatestNews();
+        SetLatestNews();
     }
 
     // <--====== Build connection sector. ======-->
@@ -59,9 +57,11 @@ public class DB_Connect
         catch (Exception ex) { ex.printStackTrace(); }
     }
 
-    // <--====== Data distribution block from the database sector. ======-->
-    public ArrayList<LastNewsLineModel> GetLatestNews()
+    // <--====== Filling in data sector. ======-->
+    private void SetLatestNews()
     {
+        BuildConnection();
+
         ArrayList<LastNewsLineModel> last_news_line = new ArrayList<>();
 
         try (MongoClient mongo_client = MongoClients.create(_settings))
@@ -84,6 +84,9 @@ public class DB_Connect
             }
             catch (Exception ex) { ex.printStackTrace(); }
         }
-        return last_news_line;
+        _last_news_line = last_news_line;
     }
+
+    // <--====== Issuing data to the client sector. ======-->
+    public static ArrayList<LastNewsLineModel> GetLastNewsLine() { return _last_news_line; }
 }

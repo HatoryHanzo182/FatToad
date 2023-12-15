@@ -1,8 +1,8 @@
 package reddit.fat_toad.servlets;
 
 import com.google.inject.Singleton;
+import reddit.fat_toad.db.DB;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +14,7 @@ public class GamesServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
+        req.setAttribute("LatestNewsData", DB.GetLastNewsLine());
         req.setAttribute("page-body", "games.jsp");
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);

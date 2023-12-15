@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
+<%@ page import="java.util.ArrayList" %>
 <%String context = request.getContextPath();%>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
@@ -7,9 +9,19 @@
     <div class="ln-title">Latest News</div>
     <div class="news-ticker">
         <div class="news-ticker-contant">
-            <div class="nt-item"><span class="new">new</span>Embark on an exciting fantasy adventure! Join us today! </div>
-            <div class="nt-item"><span class="strategy">strategy</span>A new strategy game hits the market! Plan your moves and conquer battles. </div>
-            <div class="nt-item"><span class="racing">racing</span> Epic races have begun! Prepare your cars for insane speed and sharp turns. </div>
+            <%
+                ArrayList<LastNewsLineModel> latest_news_line_data = (ArrayList<LastNewsLineModel>) request.getAttribute("LatestNewsData");
+
+                for (LastNewsLineModel news_line_i : latest_news_line_data)
+                {
+            %>
+            <div class="nt-item">
+                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <%= news_line_i.GetNews() %>
+            </div>
+            <%
+                }
+            %>
         </div>
     </div>
 </div>

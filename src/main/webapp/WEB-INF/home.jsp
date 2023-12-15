@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="reddit.fat_toad.db.LastNewsLine" %>
+<%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
 <%String context = request.getContextPath();%>
 <!-- Page Preloaded. -->
@@ -55,9 +55,9 @@
     <div class="news-ticker">
         <div class="news-ticker-contant">
             <%
-                ArrayList<LastNewsLine> latest_news_line_data = (ArrayList<LastNewsLine>) request.getAttribute("LatestNewsData");
+                ArrayList<LastNewsLineModel> latest_news_line_data = (ArrayList<LastNewsLineModel>) request.getAttribute("LatestNewsData");
 
-                for (LastNewsLine news_line_i : latest_news_line_data)
+                for (LastNewsLineModel news_line_i : latest_news_line_data)
                 {
             %>
             <div class="nt-item">
@@ -117,12 +117,12 @@
         </div>
     </div>
 </section>
-<!-- Recent game section  -->
+<!-- Recent game articles section  -->
 <section class="recent-game-section spad set-bg" data-setbg="img/review-bg-2.png">
     <div class="container">
         <div class="section-title text-white">
             <div class="cata new">new</div>
-            <h2>Recent Games</h2>
+            <h2>Recent Gaming Articles</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -163,7 +163,7 @@
                         <div class="cata new">new</div>
                     </div>
                     <div class="rgi-content">
-                        <h5>PlayStation users are having their accounts blocked en masse and permanently: what's happening</h5>
+                        <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
                         <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
                         <a href="#" class="comment">3 Comments</a>
                         <div class="rgi-extra">
@@ -187,7 +187,7 @@
                     <div class="ti-content">
                         <div class="ti-thumb set-bg" data-setbg="img/tournament/1.png"></div>
                         <div class="ti-text">
-                            <h4>World Of WarCraft</h4>
+                            <h4>Dota2</h4>
                             <ul>
                                 <li><span>Tournament Beggins:</span> 11.12.2023</li>
                                 <li><span>Tounament Ends:</span> 26.12.2023</li>
