@@ -24,7 +24,13 @@ public class HomeServlet extends HttpServlet
     {
         String connection_string = "mongodb+srv://FAT_TOAD_ADMIN:hkHj0miSxIog4Lop@fattoadcluster.masziuv.mongodb.net/?retryWrites=true&w=majority";
         ServerApi server_api = ServerApi.builder().version(ServerApiVersion.V1).build();
-        MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(new ConnectionString(connection_string))
+        try {
+            Class.forName("com.mongodb.ConnectionString");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        ConnectionString connection = new  com.mongodb.ConnectionString(connection_string);
+        MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(connection)
                 .serverApi(server_api).build();
 
         try (MongoClient mongo_client = MongoClients.create(settings))
