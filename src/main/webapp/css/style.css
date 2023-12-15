@@ -446,6 +446,10 @@ ul, ol {
 	background: #ff205f;
 }
 
+.news-ticker-contant .nt-item span.adventures {
+	background: #40abf5;
+}
+
 .news-ticker-contant .nt-item span.strategy {
 	background: #4eae60;
 }

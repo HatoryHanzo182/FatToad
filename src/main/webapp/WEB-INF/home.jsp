@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="reddit.fat_toad.db.LastNewsLine" %>
+<%@ page import="java.util.ArrayList" %>
 <%String context = request.getContextPath();%>
 <!-- Page Preloaded. -->
 <div id="preloder"><div class="loader"></div></div>
@@ -47,39 +49,34 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
 <!-- Latest news section. -->
 <div class="latest-news-section">
     <div class="ln-title">Latest News</div>
     <div class="news-ticker">
         <div class="news-ticker-contant">
-            <div class="nt-item"><span class="new">new</span>RockStar announced the release of GTA 6 </div>
-            <div class="nt-item"><span class="strategy">strategy</span>Hearthstone: Innovative events, unique challenges, exciting rewards. </div>
-            <div class="nt-item"><span class="racing">racing</span>Need for Speed No Limits — Race against your demons and battle vampires in the Eternal Majesty special event.</div>
+            <%
+                ArrayList<LastNewsLine> latest_news_line_data = (ArrayList<LastNewsLine>) request.getAttribute("LatestNewsData");
+
+                for (LastNewsLine news_line_i : latest_news_line_data)
+                {
+            %>
+            <div class="nt-item">
+                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <%= news_line_i.GetNews() %>
+            </div>
+            <%
+                }
+            %>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
 <!-- Feature section. -->
 <section class="feature-section spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 p-0">
                 <div class="feature-item set-bg" data-setbg="img/features/1.jpg">
-                    <span class="cata new">adventures</span>
+                    <span class="cata adventure">adventures</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">World of warcraft</a></h5>
                         <p>Hit the road and level up your characters up to level 20 for FREE!. </p>
@@ -99,7 +96,7 @@
             </div>
             <div class="col-lg-3 col-md-6 p-0">
                 <div class="feature-item set-bg" data-setbg="img/features/3.png">
-                    <span class="cata new">adventures</span>
+                    <span class="cata adventure">adventures</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">Uncharted 4</a></h5>
                         <p>This is the finale of the Nathan Drake saga, so the details of the story are kept in the strictest confidence. “But the most important thing to say right now is that Uncharted 4 is a story about family,” Eric says.</p>
