@@ -11,6 +11,13 @@
     z-index: 2;
 }
 
+.registration-block {
+    display: none;
+    padding-top: 8%;
+    width: 30%;
+    z-index: 2;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -44,6 +51,10 @@
     align-items: center;
     padding-left: 10px;
     transition: 0.2s ease-in-out;
+}
+
+.inputForm > ion-icon {
+    font-size: 20px;
 }
 
 .input {
@@ -143,6 +154,10 @@
         width: 40%;
     }
 
+    .registration-block {
+        width: 40%;
+    }
+
     .art-block {
         width: 60%;
     }
@@ -150,6 +165,10 @@
 
 @media screen and (max-width: 1129px) {
     .authorization-block {
+        width: 50%;
+    }
+
+    .registration-block {
         width: 50%;
     }
 
@@ -163,6 +182,10 @@
         width: 60%;
     }
 
+    .registration-block {
+        width: 60%;
+    }
+
     .art-block {
         width: 40%;
     }
@@ -173,6 +196,10 @@
         width: 70%;
     }
 
+    .registration-block {
+        width: 70%;
+    }
+
     .art-block {
         width: 30%;
     }
@@ -180,6 +207,11 @@
 
 @media screen and (max-width: 649px) {
     .authorization-block {
+        padding-left: 13%;
+        width: 100%;
+    }
+
+    .registration-block {
         padding-left: 13%;
         width: 100%;
     }
