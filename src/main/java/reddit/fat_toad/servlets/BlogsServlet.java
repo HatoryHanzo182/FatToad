@@ -16,9 +16,9 @@ public class BlogsServlet extends HttpServlet
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         req.setAttribute("LatestNewsData", DB.GetLastNewsLine());
-        req.setAttribute("page-body", "blogs.jsp");
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);
+        req.setAttribute("page-body", "blogs.jsp");
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

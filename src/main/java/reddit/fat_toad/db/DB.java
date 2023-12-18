@@ -20,6 +20,7 @@ public class DB
 {
     private static String _connection_string = "";
     private static MongoClientSettings _settings;
+    private static String _base_name = "FAT_TOAD_DATA";
     private static ArrayList<LastNewsLineModel> _last_news_line;
 
     public DB()
@@ -68,7 +69,7 @@ public class DB
         {
             try
             {
-                MongoDatabase database = mongo_client.getDatabase("FAT_TOAD_DATA");
+                MongoDatabase database = mongo_client.getDatabase(_base_name);
                 MongoCollection<Document> collection = database.getCollection("LatestNews");
                 FindIterable<Document> document_LatestNews = collection.find();
 

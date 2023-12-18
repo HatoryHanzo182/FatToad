@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section -->
 <div class="latest-news-section">
     <div class="ln-title">Latest News</div>

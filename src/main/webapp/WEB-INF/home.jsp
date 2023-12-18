@@ -1,7 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
-<%String context = request.getContextPath();%>
+<%
+    String context = request.getContextPath();
+%>
 <!-- Page Preloaded. -->
 <div id="preloder"><div class="loader"></div></div>
 <!-- Hero section. -->

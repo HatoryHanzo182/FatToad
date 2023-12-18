@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%String context = request.getContextPath();%>
 <div class="marking">
     <div class="authorization-block">
         <div>

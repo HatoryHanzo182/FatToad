@@ -13,9 +13,9 @@ public class SignInServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        req.setAttribute("page-body", "sign_in.jsp");
         req.setAttribute("ShowMenu", false);
         req.setAttribute("ShowFooter", true);
+        req.setAttribute("page-body", "sign_in.jsp");
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

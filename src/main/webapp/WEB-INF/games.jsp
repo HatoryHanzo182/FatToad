@@ -1,10 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
-<%String context = request.getContextPath();%>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
-<!-- Latest news section -->
+<!-- Latest news section. -->
 <div class="latest-news-section">
     <div class="ln-title">Latest News</div>
     <div class="news-ticker">
