@@ -139,6 +139,10 @@
     border: 1px solid #2d79f3;
 }
 
+.error-message > p {
+    color: red;
+}
+
 /*--====== Art design. ======-*/
 .art-block {
     width: 70%;
