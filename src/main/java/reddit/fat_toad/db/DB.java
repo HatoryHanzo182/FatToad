@@ -9,7 +9,8 @@ import com.google.gson.JsonParser;
 import com.mongodb.ServerApiVersion;
 import com.mongodb.client.*;
 import org.bson.Document;
-import reddit.fat_toad.db.Models.LastNewsLineModel;
+import reddit.fat_toad.db.models.LastNewsLineModel;
+
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
