@@ -10,38 +10,34 @@ function ShowSignInContent()
     document.querySelector('.registration-block').style.display = 'none';
 }
 
+function СreateRegistrationDate()
+{
+    var current_date = new Date();
+    return current_date.toISOString();
+}
+
 function Send()
 {
     const formData = {
         email: document.getElementById("id-input-email").value,
         nickname: document.getElementById("id-input-nickname").value,
-        password: document.getElementById("id-input-password").value
+        password: document.getElementById("id-input-password").value,
+        registration_date: СreateRegistrationDate(),
+        last_activity_date: null,
+        account_deletion_date: null
     };
 
     fetch("/FatToad/signin", {
         method: "POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log("Received data:", data);
-            // Дополнительная обработка успешного ответа от сервера
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            // Обработка ошибки при запросе к серверу
-        });
+    }).then(response =>
+    {
+        if (!response.ok)
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        return response.json();
+    }).catch(error => { console.error("Error:", error); });
 }
-
-
 
 function NeuenBenutzerSenden()
 {
@@ -56,7 +52,7 @@ function NeuenBenutzerSenden()
         Send();
 
         alert("👽 Welcome\nWe are glad that you are with us, we promise that we will not use your data for personal gain. "
-            + "Just visit the site, share your impressions, communicate, and become our critic in the gaming industry");
+            + "Just visit the site, share your impressions, communicate, and become our critic in the gaming industry.");
 
         location.reload();
     }

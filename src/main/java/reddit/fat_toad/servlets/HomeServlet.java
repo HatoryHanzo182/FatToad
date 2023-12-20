@@ -2,7 +2,6 @@ package reddit.fat_toad.servlets;
 
 import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

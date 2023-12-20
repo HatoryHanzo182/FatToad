@@ -1,4 +1,4 @@
-package reddit.fat_toad.db.models;
+package reddit.fat_toad.db.Models;
 
 import com.google.gson.annotations.SerializedName;
 import java.text.ParseException;

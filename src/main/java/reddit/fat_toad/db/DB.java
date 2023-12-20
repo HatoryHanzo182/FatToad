@@ -9,8 +9,8 @@ import com.google.gson.JsonParser;
 import com.mongodb.ServerApiVersion;
 import com.mongodb.client.*;
 import org.bson.Document;
-import reddit.fat_toad.db.models.LastNewsLineModel;
-
+import reddit.fat_toad.db.Models.LastNewsLineModel;
+import reddit.fat_toad.db.Models.UsersModels;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
@@ -23,6 +23,7 @@ public class DB
     private static MongoClientSettings _settings;
     private static String _base_name = "FAT_TOAD_DATA";
     private static ArrayList<LastNewsLineModel> _last_news_line;
+
 
     public DB()
     {
@@ -87,6 +88,28 @@ public class DB
             catch (Exception ex) { ex.printStackTrace(); }
         }
         _last_news_line = last_news_line;
+    }
+
+    // <--====== Receiving data from the client sector. ======-->
+    public static void AddNewUser(UsersModels new_user)
+    {
+        try (MongoClient mongo_client = MongoClients.create(_settings))
+        {
+            MongoDatabase database = mongo_client.getDatabase(_base_name);
+            MongoCollection<Document> collection = database.getCollection("Users");
+
+            Document newUserDocument = new Document()
+                    .append("email", new_user.GetEmail())
+                    .append("nickname", new_user.GetNickname())
+                    .append("password", new_user.GetPassword())
+                    .append("registration_date", new_user.GetRegistrationDate())
+                    .append("last_activity_date", new_user.GetLastActivityDate())
+                    .append("account_deletion_date", new_user.GetAccountDeletionDate());
+
+            collection.insertOne(newUserDocument);
+            System.out.println("New user added to the 'Users' collection.");
+        }
+        catch (Exception ex) { ex.printStackTrace(); }
     }
 
     // <--====== Issuing data to the client sector. ======-->

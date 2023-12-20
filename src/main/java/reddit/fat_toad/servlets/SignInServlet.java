@@ -2,12 +2,14 @@ package reddit.fat_toad.servlets;
 
 import com.google.gson.Gson;
 import com.google.inject.Singleton;
+import reddit.fat_toad.db.DB;
+import reddit.fat_toad.db.Models.UsersModels;
+import reddit.fat_toad.services.hash.SHA256Hashing;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
-import java.io.Console;
 import java.io.IOException;
 
 @Singleton
@@ -25,28 +27,37 @@ public class SignInServlet extends HttpServlet
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-/*        StringBuilder buffer = new StringBuilder();
+        StringBuilder buffer = new StringBuilder();
         BufferedReader reader = req.getReader();
         String line;
 
-        while ((line = reader.readLine()) != null) {
+        while ((line = reader.readLine()) != null)
             buffer.append(line);
-        }
 
         String data = buffer.toString();
-        System.out.println("Received data: " + data);
-
-        // Теперь вы можете использовать библиотеку JSON (например, Gson) для преобразования строки JSON в объект
-        // Пример с использованием Gson:
         Gson gson = new Gson();
-        YourClassType yourObject = gson.fromJson(data, YourClassType.class);
+        UsersModels users = gson.fromJson(data, UsersModels.class);
 
-        String email = yourObject.getEmail();
-        String nickname = yourObject.getNickname();
-        String password = yourObject.getPassword();
+        System.out.println("Email: " + users.GetEmail());
+        System.out.println("Nickname: " + users.GetNickname());
+        System.out.println("Password: " + users.GetPassword());
+        System.out.println("Registration: " + users.GetRegistrationDate());
+        System.out.println("LastActivityDate: " + users.GetLastActivityDate());
+        System.out.println("AccountDeletionDate: " + users.GetAccountDeletionDate());
 
-        System.out.println("Email: " + email);
-        System.out.println("Nickname: " + nickname);
-        System.out.println("Password: " + password);*/
+        DataHashing(users);
+
+        System.out.println("\nHash: ");
+        System.out.println("Password hash: " + users.GetPassword());
+
+        DB.AddNewUser(users);
+    }
+
+    // <--====== Build connection sector. ======-->
+    private void DataHashing(UsersModels users_data)
+    {
+        SHA256Hashing sha256 = new SHA256Hashing();
+
+        users_data.SetPassword(sha256.HashString(users_data.GetPassword()));
     }
 }
