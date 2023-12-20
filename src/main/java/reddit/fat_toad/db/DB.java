@@ -10,7 +10,7 @@ import com.mongodb.ServerApiVersion;
 import com.mongodb.client.*;
 import org.bson.Document;
 import reddit.fat_toad.db.Models.LastNewsLineModel;
-import reddit.fat_toad.db.Models.UsersModels;
+import reddit.fat_toad.db.Models.UsersModel;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
@@ -23,11 +23,13 @@ public class DB
     private static MongoClientSettings _settings;
     private static String _base_name = "FAT_TOAD_DATA";
     private static ArrayList<LastNewsLineModel> _last_news_line;
+    private static ArrayList<UsersModel> _users;
 
 
     public DB()
     {
         SetLatestNews();
+        SetUsersNews();
     }
 
     // <--====== Build connection sector. ======-->
@@ -90,8 +92,41 @@ public class DB
         _last_news_line = last_news_line;
     }
 
+    private void SetUsersNews()
+    {
+        BuildConnection();
+
+        ArrayList<UsersModel> users = new ArrayList<>();
+
+        try (MongoClient mongo_client = MongoClients.create(_settings))
+        {
+            try
+            {
+                MongoDatabase database = mongo_client.getDatabase(_base_name);
+                MongoCollection<Document> collection = database.getCollection("Users");
+                FindIterable<Document> document_users = collection.find();
+
+                for (Document document : document_users)
+                {
+                    UsersModel user_i = new UsersModel();
+
+                    user_i.SetEmail((document.getString("email")));
+                    user_i.SetNickname((document.getString("nickname")));
+                    user_i.SetPassword((document.getString("password")));
+                    user_i.SetRegistrationDate((document.getString("registration_date")));
+                    user_i.SetLastActivityDate((document.getString("last_activity_date")));
+                    user_i.SetAccountDeletionDate((document.getString("account_deletion_date")));
+
+                    users.add(user_i);
+                }
+            }
+            catch (Exception ex) { ex.printStackTrace(); }
+        }
+        _users = users;
+    }
+
     // <--====== Receiving data from the client sector. ======-->
-    public static void AddNewUser(UsersModels new_user)
+    public static void AddNewUser(UsersModel new_user)
     {
         try (MongoClient mongo_client = MongoClients.create(_settings))
         {
@@ -107,11 +142,11 @@ public class DB
                     .append("account_deletion_date", new_user.GetAccountDeletionDate());
 
             collection.insertOne(newUserDocument);
-            System.out.println("New user added to the 'Users' collection.");
         }
         catch (Exception ex) { ex.printStackTrace(); }
     }
 
     // <--====== Issuing data to the client sector. ======-->
     public static ArrayList<LastNewsLineModel> GetLastNewsLine() { return _last_news_line; }
+    public static ArrayList<UsersModel> GetUsers() { return _users; }
 }

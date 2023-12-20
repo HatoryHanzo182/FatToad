@@ -32,7 +32,7 @@ public class UsersModel
     public void SetEmail(String email) { this._email = email; }
     public void SetNickname(String nickname) { this._nickname = nickname; }
     public void SetPassword(String password) { this._password = password; }
-    public void SetRegistrationDate(Date registration_date)
+    public void SetRegistrationDate(String registration_date)
     {
         try
         {

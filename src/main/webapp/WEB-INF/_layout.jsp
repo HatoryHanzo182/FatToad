@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
     <!-- Stylesheets. -->
     <link rel="stylesheet" href="<%=context%>/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="<%=context%>/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="<%=context%>/css/font_awesome.min.css"/>
     <link rel="stylesheet" href="<%=context%>/css/owl.carousel.css"/>
     <link rel="stylesheet" href="<%=context%>/css/style.css"/>
     <link rel="stylesheet" href="<%=context%>/css/animate.css"/>
-    <link rel="stylesheet" href="<%=context%>/css/signin.css">
+    <link rel="stylesheet" href="<%=context%>/css/signin_up.css">
     <title>Fat toad</title>
 </head>
 <!-- Header section. -->
@@ -78,7 +78,6 @@
 <script src="<%=context%>/js/owl.carousel.min.js"></script>
 <script src="<%=context%>/js/jquery.marquee.min.js"></script>
 <script src="<%=context%>/js/main.js"></script>
-<script src="<%=context%>/js/registration_authorization.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
