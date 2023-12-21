@@ -14,6 +14,7 @@ import reddit.fat_toad.db.Models.UsersModel;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Objects;
 
 @Singleton
@@ -29,7 +30,7 @@ public class DB
     public DB()
     {
         SetLatestNews();
-        SetUsersNews();
+        SetUsers();
     }
 
     // <--====== Build connection sector. ======-->
@@ -92,7 +93,7 @@ public class DB
         _last_news_line = last_news_line;
     }
 
-    private void SetUsersNews()
+    private void SetUsers()
     {
         BuildConnection();
 
@@ -110,12 +111,12 @@ public class DB
                 {
                     UsersModel user_i = new UsersModel();
 
-                    user_i.SetEmail((document.getString("email")));
-                    user_i.SetNickname((document.getString("nickname")));
-                    user_i.SetPassword((document.getString("password")));
-                    user_i.SetRegistrationDate((document.getString("registration_date")));
-                    user_i.SetLastActivityDate((document.getString("last_activity_date")));
-                    user_i.SetAccountDeletionDate((document.getString("account_deletion_date")));
+                    user_i.SetEmail((String) document.get("email"));
+                    user_i.SetNickname((String) document.get("nickname"));
+                    user_i.SetPassword((String) document.get("password"));
+                    user_i.SetRegistrationDate((Date) document.getDate("registration_date"));
+                    user_i.SetLastActivityDate((Date) document.getDate("last_activity_date"));
+                    user_i.SetAccountDeletionDate((Date) document.getDate("account_deletion_date"));
 
                     users.add(user_i);
                 }
@@ -125,6 +126,7 @@ public class DB
         _users = users;
     }
 
+
     // <--====== Receiving data from the client sector. ======-->
     public static void AddNewUser(UsersModel new_user)
     {
@@ -132,8 +134,7 @@ public class DB
         {
             MongoDatabase database = mongo_client.getDatabase(_base_name);
             MongoCollection<Document> collection = database.getCollection("Users");
-
-            Document newUserDocument = new Document()
+            Document new_user_document = new Document()
                     .append("email", new_user.GetEmail())
                     .append("nickname", new_user.GetNickname())
                     .append("password", new_user.GetPassword())
@@ -141,7 +142,8 @@ public class DB
                     .append("last_activity_date", new_user.GetLastActivityDate())
                     .append("account_deletion_date", new_user.GetAccountDeletionDate());
 
-            collection.insertOne(newUserDocument);
+            _users.add(new_user);
+            collection.insertOne(new_user_document);
         }
         catch (Exception ex) { ex.printStackTrace(); }
     }

@@ -32,6 +32,7 @@ public class UsersModel
     public void SetEmail(String email) { this._email = email; }
     public void SetNickname(String nickname) { this._nickname = nickname; }
     public void SetPassword(String password) { this._password = password; }
+    public void SetRegistrationDate(Date registration_date) { this._registration_date = registration_date; }
     public void SetRegistrationDate(String registration_date)
     {
         try
@@ -43,6 +44,7 @@ public class UsersModel
         }
         catch (ParseException ex) { ex.printStackTrace(); }
     }
+    public void SetLastActivityDate(Date last_activity_date) { this._last_activity_date = last_activity_date; }
     public void SetLastActivityDate(String last_activity_date)
     {
         if (!Objects.equals(last_activity_date, "null"))
@@ -55,6 +57,7 @@ public class UsersModel
             catch (ParseException | NumberFormatException ex) { ex.printStackTrace(); }
         }
     }
+    public void SetAccountDeletionDate(Date account_deletion_date) { this._account_deletion_date = account_deletion_date; }
     public void SetAccountDeletionDate(String account_deletion_date)
     {
         if (!Objects.equals(account_deletion_date, "null"))

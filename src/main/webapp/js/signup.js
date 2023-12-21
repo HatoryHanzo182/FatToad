@@ -6,7 +6,7 @@ function СreateRegistrationDate()
 
 function Send()
 {
-    const formData = {
+    const form_data = {
         email: document.getElementById("id-input-email").value,
         nickname: document.getElementById("id-input-nickname").value,
         password: document.getElementById("id-input-password").value,
@@ -18,7 +18,7 @@ function Send()
     fetch("/FatToad/signup", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(form_data)
     }).then(response =>
     {
         if (!response.ok)
@@ -72,6 +72,8 @@ function Inspector(email, nickname, password)
 
 function NeuenBenutzerSenden()
 {
+    event.preventDefault();
+
     const email = document.getElementById("id-input-email").value;
     const nickname = document.getElementById("id-input-nickname").value;
     const password = document.getElementById("id-input-password").value;
@@ -80,8 +82,16 @@ function NeuenBenutzerSenden()
     {
         Send();
 
+        email.innerText = ""
+        nickname.innerText = ""
+        password.innerText = ""
+
+        location.reload(true);
+
         alert("👽 Welcome\nWe are glad that you are with us, we promise that we will not use your data for personal gain. "
             + "Just visit the site, share your impressions, communicate, and become our critic in the gaming industry.");
+
+        window.history.back();
     }
 }
 

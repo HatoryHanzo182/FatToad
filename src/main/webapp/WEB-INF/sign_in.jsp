@@ -3,6 +3,8 @@
     String context = request.getContextPath();
     String page_body = (String) request.getAttribute("page-body");
 %>
+<!-- Page Preloaded. -->
+<div id="preloder"><div class="loader"></div></div>
 <div class="marking">
     <!-- Authorization. -->
     <div class="authorization-block">
