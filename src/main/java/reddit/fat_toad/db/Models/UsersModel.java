@@ -35,14 +35,17 @@ public class UsersModel
     public void SetRegistrationDate(Date registration_date) { this._registration_date = registration_date; }
     public void SetRegistrationDate(String registration_date)
     {
-        try
+        if (!Objects.equals(registration_date, "null"))
         {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSX");
-            String formattedDate = sdf.format(registration_date);
+            try
+            {
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSX");
+                String formattedDate = sdf.format(registration_date);
 
-            this._registration_date = sdf.parse(formattedDate);
+                this._registration_date = sdf.parse(formattedDate);
+            }
+            catch (ParseException ex) { ex.printStackTrace(); }
         }
-        catch (ParseException ex) { ex.printStackTrace(); }
     }
     public void SetLastActivityDate(Date last_activity_date) { this._last_activity_date = last_activity_date; }
     public void SetLastActivityDate(String last_activity_date)

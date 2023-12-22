@@ -23,7 +23,6 @@ function Send()
     {
         if (!response.ok)
             throw new Error(`HTTP error! Status: ${response.status}`);
-        return response.json();
     }).catch(error => { console.error("Error:", error); });
 }
 
@@ -81,12 +80,6 @@ function NeuenBenutzerSenden()
     if (Inspector(email, nickname, password))
     {
         Send();
-
-        email.innerText = ""
-        nickname.innerText = ""
-        password.innerText = ""
-
-        location.reload(true);
 
         alert("👽 Welcome\nWe are glad that you are with us, we promise that we will not use your data for personal gain. "
             + "Just visit the site, share your impressions, communicate, and become our critic in the gaming industry.");
