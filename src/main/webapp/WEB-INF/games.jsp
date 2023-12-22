@@ -46,11 +46,11 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/5.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/5.png">
+                        <div class="score yellow">8.6</div>
                     </div>
                     <div class="review-text">
-                        <h4>Overwatch Halloween</h4>
+                        <h4>Resident Evil 4 Remake - Two paths</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -59,19 +59,21 @@
                             <i class="fa fa-star is-fade"></i>
                         </div>
                         <p>
-                            Immerse yourself in the spooky atmosphere of Overwatch Halloween. This thrilling event brings a perfect
-                            blend of chills and excitement. Join the action-packed adventure, where heroes face off against supernatural foes.
+                            In the Separate Ways add-on, players will enjoy familiar gameplay with a minimum of changes.
+                            The only DLC feature is Ada's grappling hook, with which she can overcome some obstacles.
+                            This item can only be used in specially designated areas. Otherwise, this is still the same Resident Evil 4.
+                            Below we have answered some questions that may arise as you progress.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/6.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/6.png">
+                        <div class="score green">9.8</div>
                     </div>
                     <div class="review-text">
-                        <h4>Grand Theft Auto</h4>
+                        <h4>Baldur's Gate 3</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -80,43 +82,43 @@
                             <i class="fa fa-star is-fade"></i>
                         </div>
                         <p>
-                            Immerse yourself in the thrilling world of Grand Theft Auto.
-                            This iconic game series has set the standard for open-world action and adventure.
-                            Experience the adrenaline-pumping missions, intricate storylines, and the vast sandbox of opportunities.
+                            Baldur's Gate III is a turn-based role-playing video game and the third installment in the Baldur's Gate series.
+                            It was announced on June 6, 2019 by its developer Larian Studios at the presentation of the Google Stadia cloud
+                            service. As confirmed by Wizards of the Coast, the rights holders for the Dungeons & Dragons setting in the
+                            games, Baldur's Gate III will officially be the "new chapter in the legendary series."
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/7.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/7.png">
+                        <div class="score purple">4.2</div>
                     </div>
                     <div class="review-text">
-                        <h4>Avatar</h4>
+                        <h4>Redfall</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star is-fade"></i>
+                            <i class="fa fa-star is-fade"></i>
                             <i class="fa fa-star is-fade"></i>
                         </div>
                         <p>
-                            Immerse yourself in the extraordinary world of Avatar. This visually stunning masterpiece takes you
-                            on a breathtaking journey through the lush landscapes of Pandora. Explore the unique culture, encounter exotic
-                            creatures, and become part of an epic adventure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla vel imperdiet libero. Ut auctor justo vitae ex convallis, vitae malesuada lacus mattis.
+                            Redfall isn't bad - it's apocalyptically terrible. On the one hand,
+                            this makes the critic’s job easier, but often even bad games can be praised for their plot,
+                            design, gameplay elements, or at least music. But this is not the case.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/8.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/8.png">
+                        <div class="score black">8.9</div>
                     </div>
                     <div class="review-text">
-                        <h4>Anthem</h4>
+                        <h4>Genshin Impact</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -125,42 +127,42 @@
                             <i class="fa fa-star is-fade"></i>
                         </div>
                         <p>
-                            Immerse yourself in the captivating world of Anthem. This action-packed game takes you to the skies as
-                            you don a powerful exosuit, exploring a vast and dynamic landscape. Engage in epic battles, unravel a rich narrative,
-                            and team up with friends for an unforgettable gaming experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            I think Genshin Impact needs no introduction, but for those who don’t know,
+                            it’s a free-to-play adventure game with RPG elements in an open world from the Chinese studio Mihoyo.
+                            When Genshin Impact was announced, I, like many, expected another mobile garbage dump from Chinese developers.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/9.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/9.png">
+                        <div class="score pink">10</div>
                     </div>
                     <div class="review-text">
-                        <h4>Cyberpunk 2077</h4>
+                        <h4>God of War Ragnarök</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star is-fade"></i>
+                            <i class="fa fa-star"></i>
                         </div>
                         <p>
-                            Dive into the heart of the cyberpunk metropolis, where neon lights flicker and intrigue lurks around every corner.
-                            Cyberpunk Adventure offers an immersive experience, blending high-tech futurism with gritty urban landscapes.
-                            Uncover corporate conspiracies, enhance your abilities with cybernetic implants, and navigate a city that never sleeps.
+                            God of War Ragnarok continues and ends the “Nordic” saga of Kratos.
+                            We'll tell you how the finale of the conflict between the Spartans and the gods of Scandinavia,
+                            so expected by many players, turned out.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/10.jpg">
-                        <div class="score yellow">9.3</div>
+                    <div class="review-cover set-bg" data-setbg="img/review/10.png">
+                        <div class="score yellow">8.7</div>
                     </div>
                     <div class="review-text">
-                        <h4>Spiderman</h4>
+                        <h4>Sekiro: Shadows Die Twice</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -169,10 +171,9 @@
                             <i class="fa fa-star is-fade"></i>
                         </div>
                         <p>
-                            Swing into action with the spectacular world of Spiderman.
-                            This high-flying game brings the iconic superhero to life in an open-world adventure.
-                            Traverse the skyscrapers of New York City, battle notorious villains, and experience the thrill of being the friendly
-                            neighborhood Spider-Man.
+                            Sekiro: Shadows Die Twice is a very controversial milestone in the history of the Japanese
+                            studio From Software. Game of the Year according to The Game Awards 2019, which is criticized
+                            by many for being “excessively complex.”
                         </p>
                     </div>
                 </div>

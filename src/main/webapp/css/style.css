@@ -150,6 +150,14 @@ ul, ol {
 	background: #40abf5;
 }
 
+.cata.fighting {
+	background: #000000;
+}
+
+.cata.shooter {
+	background: #61f540;
+}
+
 /* Preloder */
 #preloder {
 	position: fixed;
@@ -681,6 +689,10 @@ ul, ol {
 
 .review-item .review-cover .score.green {
 	background: #4eae60;
+}
+
+.review-item .review-cover .score.black {
+	background: #000000;
 }
 
 .review-item .review-text {

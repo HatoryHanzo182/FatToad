@@ -88,7 +88,7 @@
             </div>
             <div class="col-lg-3 col-md-6 p-0">
                 <div class="feature-item set-bg" data-setbg="img/features/2.png">
-                    <span class="cata strategy">new</span>
+                    <span class="cata new">new</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">THE WAR HAS CHANGED</a></h5>
                         <p>In the direct sequel to the legendary game Call of Duty: Modern Warfare II, Captain Price and OTG-141 confront the most terrible threat.</p>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-lg-3 col-md-6 p-0">
                 <div class="feature-item set-bg" data-setbg="img/features/4.png">
-                    <span class="cata racing">shooter</span>
+                    <span class="cata fighting">fighting</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">IT'S IN OUR BLOOD!</a></h5>
                         <p>Discover for yourself the revival of the entire world of Mortal Kombat, created by the god of fire Liu Kang. Mortal Kombat 1 begins a new era of the cult franchise with a new combat system, attack modes and finishing moves!</p>
@@ -308,7 +308,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="footer-widget mb-5 mb-md-0">
-                    <h4 class="fw-title">Latest Posts</h4>
+                    <h4 class="fw-title">Top Posts</h4>
                     <div class="latest-blog">
                         <div class="lb-item">
                             <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.png"></div>
