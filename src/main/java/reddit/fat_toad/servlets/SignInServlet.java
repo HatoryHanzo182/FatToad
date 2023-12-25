@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
 import reddit.fat_toad.db.Models.UsersModel;
+import reddit.fat_toad.services.hash.SHA256Hashing;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,14 +24,6 @@ public class SignInServlet extends HttpServlet
         req.setAttribute("ShowMenu", false);
         req.setAttribute("ShowFooter", true);
         req.setAttribute("page-body", "sign_in.jsp");
-
-        ArrayList<UsersModel> users = DB.GetUsers();
-        System.out.println("Number of users: " + users.size());
-
-        for (UsersModel user_i : users) {
-            System.out.print(user_i.GetEmail() + " " + user_i.GetNickname() + " " + user_i.GetPassword()  + "\n");
-        }
-
         req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
     }
 
@@ -45,8 +39,34 @@ public class SignInServlet extends HttpServlet
 
         String data = buffer.toString();
         Gson gson = new Gson();
-        UsersModel users = gson.fromJson(data, UsersModel.class);
+        UsersModel user = gson.fromJson(data, UsersModel.class);
 
-        System.out.print("SIGN IN (" + users.GetEmail() + " : " + users.GetPassword() + ")");
+        if(FindUserByEmail(user.GetEmail()) != null)
+        {
+            SHA256Hashing hasher = new SHA256Hashing();
+            String hashed_password = hasher.HashString(user.GetPassword());
+
+            System.out.print("User input password: " + user.GetPassword() + " ::: " + hashed_password + "\n");
+
+            if (hashed_password.equals(FindUserByEmail(user.GetEmail()).GetPassword()))
+                System.out.println("The passwords are the same. Entry allowed.");
+            else
+                System.out.println("Incorrect password. No entry.");
+        }
+        else
+            System.out.println("User is not found.");
+    }
+
+    private UsersModel FindUserByEmail(String email)  // Method for searching for a user by email.
+    {
+        ArrayList<UsersModel> users = DB.GetUsers();
+
+        for (UsersModel user : users)
+        {
+            if (user.GetEmail().equals(email))
+                return user;
+        }
+
+        return null;
     }
 }
