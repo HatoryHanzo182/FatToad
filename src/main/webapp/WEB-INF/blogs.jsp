@@ -1,6 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
+<%
+    String context = request.getContextPath();
+%>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section. -->
@@ -48,20 +51,22 @@
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
-                                <div class="cata new">new</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>Amazing solution from NetherRealm Studios</h5>
-                                <p>An interesting and non-standard solution to add new characters from the developers.</p>
-                                <a href="#" class="comment">278 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?blogId=1">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
+                                    <div class="cata new">new</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>Amazing solution from NetherRealm Studios</h5>
+                                    <p>An interesting and non-standard solution to add new characters from the developers.</p>
+                                    <a class="comment">278 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <div class="recent-game-item">

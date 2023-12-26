@@ -46,6 +46,12 @@ function SignIn()
     {
         if (!response.ok)
             throw new Error(`HTTP error! Status: ${response.status}`);
+
+        return response.json();
+    }).then(answer =>
+    {
+        alert(answer.message);
+        window.history.back();
     }).catch(error => { console.error("Error:", error); });
 }
 

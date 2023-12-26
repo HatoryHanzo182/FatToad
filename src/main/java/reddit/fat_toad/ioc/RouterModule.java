@@ -12,6 +12,7 @@ public class RouterModule extends ServletModule
         serve("/home").with(HomeServlet.class);
         serve("/games").with(GamesServlet.class);
         serve("/blogs").with(BlogsServlet.class);
+        serve("/blogs/single_blog").with(SingleBlogServlet.class);
         serve("/forums").with(ForumsServlet.class);
         serve("/contact").with(ContactServlet.class);
         serve("/signin").with(SignInServlet.class);

@@ -5,7 +5,6 @@ import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
 import reddit.fat_toad.db.Models.UsersModel;
 import reddit.fat_toad.services.hash.SHA256Hashing;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -46,15 +45,25 @@ public class SignInServlet extends HttpServlet
             SHA256Hashing hasher = new SHA256Hashing();
             String hashed_password = hasher.HashString(user.GetPassword());
 
-            System.out.print("User input password: " + user.GetPassword() + " ::: " + hashed_password + "\n");
-
             if (hashed_password.equals(FindUserByEmail(user.GetEmail()).GetPassword()))
-                System.out.println("The passwords are the same. Entry allowed.");
+            {
+                resp.setContentType("application/json");
+                resp.setCharacterEncoding("UTF-8");
+                resp.getWriter().println("{\"message\": \"🍕 Welcome!!\"}");
+            }
             else
-                System.out.println("Incorrect password. No entry.");
+            {
+                resp.setContentType("application/json");
+                resp.setCharacterEncoding("UTF-8");
+                resp.getWriter().println("{\"message\": \"⁉ Incorrect password.\"}");
+            }
         }
         else
-            System.out.println("User is not found.");
+        {
+            resp.setContentType("application/json");
+            resp.setCharacterEncoding("UTF-8");
+            resp.getWriter().println("{\"message\": \"😫 Sorry, but we did not find such a user in our database, please check if you entered your email correctly\"}");
+        }
     }
 
     private UsersModel FindUserByEmail(String email)  // Method for searching for a user by email.
