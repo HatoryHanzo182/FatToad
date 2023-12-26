@@ -51,7 +51,7 @@
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?blogId=1">
+                        <a href="<%=context%>/blogs/single_blog?Id=658b17c516c46489696b9bb9">
                             <div class="recent-game-item">
                                 <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
                                     <div class="cata new">new</div>
@@ -69,20 +69,22 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
-                                <div class="cata new">new</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>RDR2 - New servers </h5>
-                                <p>Immerse yourself in the world of the wild west on new servers. </p>
-                                <a href="#" class="comment">3 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658b3c0316c46489696b9bbb">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+                                    <div class="cata new">new</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>RDR2 - New servers </h5>
+                                    <p>Immerse yourself in the world of the wild west on new servers. </p>
+                                    <a href="#" class="comment">3 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <div class="recent-game-item">

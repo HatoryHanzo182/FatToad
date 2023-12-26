@@ -1,8 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="reddit.fat_toad.db.Models.BlogsModel" %>
 <%
     String context = request.getContextPath();
+    ArrayList<LastNewsLineModel> latest_news_line_data = (ArrayList<LastNewsLineModel>)request.getAttribute("LatestNewsData");
+    BlogsModel blog_data = (BlogsModel)request.getAttribute("BlogsData");
+    String blog_article = (String)request.getAttribute("BlogArticle");
 %>
 <div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section. -->
@@ -11,8 +15,6 @@
     <div class="news-ticker">
         <div class="news-ticker-contant">
             <%
-                ArrayList<LastNewsLineModel> latest_news_line_data = (ArrayList<LastNewsLineModel>) request.getAttribute("LatestNewsData");
-
                 for (LastNewsLineModel news_line_i : latest_news_line_data)
                 {
             %>
@@ -27,14 +29,14 @@
     </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="<%=context%>/img/page-top-bg/2.png">
+<section class="page-info-section set-bg" data-setbg="<%=context%>/img/page-top-bg/<%=blog_data.GetPageTopBg()%>">
     <div class="pi-content">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 text-white">
-                    <h2>PACK ROSTER</h2>
+                    <h2><%=blog_data.GetTitle()%></h2>
                     <p>
-                        Mortal Kombat 1 - Official Kombat Pack: Unleashing the Ultimate Combat Experience.
+                        <%=blog_data.GetSmallTextTitle()%>
                     </p>
                 </div>
             </div>
@@ -46,48 +48,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="blog-thumb set-bg" data-setbg="<%=context%>/img/recent-game/big1.png">
+                <div class="blog-thumb set-bg" data-setbg="<%=context%>/img/recent-game/<%=blog_data.GetRecentGame()%>">
                     <div class="cata new">new</div>
                     <div class="rgi-extra">
-                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                     </div>
                 </div>
                 <div class="blog-content">
-                    <h3>Amazing solution from NetherRealm Studios</h3>
-                    <a class="meta-comment">278 comment</a>
+                    <h3><%=blog_data.GetBlogTitle()%></h3>
+                    <a class="meta-comment"><%=blog_data.GetComments()%> comment</a>
                     <p>
-                        Mortal Kombat, the iconic fighting game franchise, has been synonymous with brutal, intense battles since its
-                        inception. The original Mortal Kombat game, released in 1992, laid the foundation for the series and became a
-                        cornerstone of the fighting game genre. Now, the legend continues with the announcement of the "Mortal Kombat 1 -
-                        Official Kombat Pack."<br><br>
-
-                        Prepare to see your favorite characters like never before. The Kombat Pack introduces revamped versions
-                        of classic fighters, complete with updated visuals, movesets, and fatalities. Whether you're a
-                        Scorpion enthusiast or a fan of Sub-Zero's icy maneuvers, the Kombat Pack breathes new life into these
-                        iconic warriors. Alongside the familiar faces, the Kombat Pack introduces new characters to the Mortal
-                        Kombat universe. These newcomers bring unique fighting styles and fatalities, adding an extra layer of
-                        strategy to the already intense battles. Get ready to master their special moves and unleash devastating combos.
-                        Customization has always been a key aspect of Mortal Kombat, and the Kombat Pack takes it to the next level.
-                        Unlock exclusive skins, gear, and fatalities for your favorite characters, allowing you to personalize your
-                        fighters and stand out in the arena.<br><br>
-
-                        Delve deeper into the Mortal Kombat lore with enhanced storylines for each character. Learn more
-                        about the backgrounds, rivalries, and motivations that drive the fighters to participate in the
-                        deadly tournament. The Kombat Pack promises a narrative experience that immerses players in the rich world
-                        of Mortal Kombat. <br><br>
-
-                        To embark on this thrilling journey, Mortal Kombat enthusiasts can acquire the
-                        "Mortal Kombat 1 - Official Kombat Pack" through various platforms.
-                        Check the official Mortal Kombat website or your preferred gaming store for information on availability,
-                        pricing, and release dates.<br><br>
-
-                        <iframe width="760" height="315" src="https://www.youtube.com/embed/eT-3vhCl6N4?si=o_gFwMih540vlkG1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                        <br><br>One of the highlights of the "Mortal Kombat 1 - Official Kombat Pack" is the revitalization of classic
-                        characters. Prepare to witness your favorite fighters from the original Mortal Kombat game reimagined with
-                        cutting-edge graphics and animations. The Kombat Pack brings a modern touch to these beloved characters while
-                        staying true to the essence that made them iconic.
+                        <%=blog_article%>
                     </p>
                 </div>
                 <div class="comment-warp">

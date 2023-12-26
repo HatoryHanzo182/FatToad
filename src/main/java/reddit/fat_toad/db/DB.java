@@ -9,6 +9,8 @@ import com.google.gson.JsonParser;
 import com.mongodb.ServerApiVersion;
 import com.mongodb.client.*;
 import org.bson.Document;
+import org.bson.types.ObjectId;
+import reddit.fat_toad.db.Models.BlogsModel;
 import reddit.fat_toad.db.Models.LastNewsLineModel;
 import reddit.fat_toad.db.Models.UsersModel;
 import java.io.InputStreamReader;
@@ -25,12 +27,14 @@ public class DB
     private static String _base_name = "FAT_TOAD_DATA";
     private static ArrayList<LastNewsLineModel> _last_news_line;
     private static ArrayList<UsersModel> _users;
+    private static ArrayList<BlogsModel> _blogs;
 
 
     public DB()
     {
         SetLatestNews();
         SetUsers();
+        SetBlogs();
     }
 
     // <--====== Build connection sector. ======-->
@@ -126,6 +130,40 @@ public class DB
         _users = users;
     }
 
+    private void SetBlogs()
+    {
+        BuildConnection();
+
+        ArrayList<BlogsModel> blogs = new ArrayList<>();
+
+        try (MongoClient mongo_client = MongoClients.create(_settings))
+        {
+            try
+            {
+                MongoDatabase database = mongo_client.getDatabase(_base_name);
+                MongoCollection<Document> collection = database.getCollection("Blogs");
+                FindIterable<Document> document_users = collection.find();
+
+                for (Document document : document_users)
+                {
+                    BlogsModel blog_i = new BlogsModel();
+
+                    blog_i.SetId((ObjectId) document.get("_id"));
+                    blog_i.SetPageTopBg((String) document.get("page_top_bg"));
+                    blog_i.SetTitle((String) document.get("title"));
+                    blog_i.SetSmallTextTitle((String) document.get("small_text_title"));
+                    blog_i.SetRecentGame((String) document.get("recent_game"));
+                    blog_i.SetBlogTitle((String) document.get("blog_title"));
+                    blog_i.SetComments((int) document.get("comments"));
+                    blog_i.SetBlogArticle((String) document.get("blog_article"));
+
+                    blogs.add(blog_i);
+                }
+            }
+            catch (Exception ex) { ex.printStackTrace(); }
+        }
+        _blogs = blogs;
+    }
 
     // <--====== Receiving data from the client sector. ======-->
     public static void AddNewUser(UsersModel new_user)
@@ -151,4 +189,5 @@ public class DB
     // <--====== Issuing data to the client sector. ======-->
     public static ArrayList<LastNewsLineModel> GetLastNewsLine() { return _last_news_line; }
     public static ArrayList<UsersModel> GetUsers() { return _users; }
+    public static ArrayList<BlogsModel> GetBlogs() { return _blogs; }
 }
