@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="blog-thumb set-bg" data-setbg="<%=context%>/img/recent-game/<%=blog_data.GetRecentGame()%>">
-                    <div class="cata new">new</div>
+                    <div class="cata <%=blog_data.GetStatus()%>"><%=blog_data.GetStatus()%></div>
                     <div class="rgi-extra">
                         <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
                         <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>

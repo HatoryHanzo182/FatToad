@@ -128,52 +128,58 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
-                        <div class="cata new">new</div>
-                    </div>
-                    <div class="rgi-content">
-                        <h5>Amazing solution from NetherRealm Studios</h5>
-                        <p>An interesting and non-standard solution to add new characters from the developers.</p>
-                        <a href="#" class="comment">278 Comments</a>
-                        <div class="rgi-extra">
-                            <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
-                            <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                <a href="<%=context%>/blogs/single_blog?Id=658b17c516c46489696b9bb9">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
+                            <div class="cata new">new</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>Amazing solution from NetherRealm Studios</h5>
+                            <p>An interesting and non-standard solution to add new characters from the developers.</p>
+                            <a href="#" class="comment">278 Comments</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
-                        <div class="cata new">new</div>
-                    </div>
-                    <div class="rgi-content">
-                        <h5>RDR2 - New servers</h5>
-                        <p>Immerse yourself in the world of the wild west on new servers.</p>
-                        <a href="#" class="comment">3 Comments</a>
-                        <div class="rgi-extra">
-                            <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
-                            <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                <a href="<%=context%>/blogs/single_blog?Id=658b3c0316c46489696b9bbb">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+                            <div class="cata new">new</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>RDR2 - New servers</h5>
+                            <p>Immerse yourself in the world of the wild west on new servers.</p>
+                            <a href="#" class="comment">3 Comments</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="recent-game-item">
-                    <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
-                        <div class="cata new">new</div>
-                    </div>
-                    <div class="rgi-content">
-                        <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
-                        <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
-                        <a href="#" class="comment">3 Comments</a>
-                        <div class="rgi-extra">
-                            <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
-                            <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                <a href="<%=context%>/blogs/single_blog?Id=658b441416c46489696b9bbc">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
+                            <div class="cata new">new</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
+                            <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
+                            <a href="#" class="comment">3 Comments</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

@@ -152,7 +152,7 @@
                         <a href="<%=context%>/blogs/single_blog?Id=658b680dab01c50ded3d4fd0">
                             <div class="recent-game-item">
                                 <div class="rgi-thumb set-bg" data-setbg="img/recent-game/6.png">
-                                    <div class="cata adventure">Adventure</div>
+                                    <div class="cata adventure">adventure</div>
                                 </div>
                                 <div class="rgi-content">
                                     <h5>About the game - The Wolf Among Us 2 </h5>

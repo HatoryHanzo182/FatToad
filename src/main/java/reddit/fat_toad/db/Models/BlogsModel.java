@@ -12,6 +12,7 @@ public class BlogsModel
     private String _blog_title;
     private int _comments;
     private String _blog_article;
+    private String _status;
 
     // <--====== Get, Set sector. ======-->
     public String GetId() { return _id.toString(); }
@@ -22,6 +23,7 @@ public class BlogsModel
     public String GetBlogTitle() { return _blog_title; }
     public int GetComments() { return _comments; }
     public String GetBlogArticle() { return _blog_article; }
+    public String GetStatus() { return _status; }
 
     public void SetId(ObjectId id) { this._id = id; }
     public void SetPageTopBg(String page_top_bg) { this._page_top_bg = page_top_bg; }
@@ -31,4 +33,5 @@ public class BlogsModel
     public void SetBlogTitle(String blog_title) { this._blog_title = blog_title; }
     public void SetComments(int comments) { this._comments = comments; }
     public void SetBlogArticle(String blog_article) { this._blog_article = blog_article; }
+    public void SetStatus(String status) { this._status = status; }
 }

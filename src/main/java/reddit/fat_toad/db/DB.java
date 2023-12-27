@@ -156,6 +156,7 @@ public class DB
                     blog_i.SetBlogTitle((String) document.get("blog_title"));
                     blog_i.SetComments((int) document.get("comments"));
                     blog_i.SetBlogArticle((String) document.get("blog_article"));
+                    blog_i.SetStatus((String) document.get("status"));
 
                     blogs.add(blog_i);
                 }
