@@ -87,79 +87,87 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
-                                <div class="cata new">new</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
-                                <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
-                                <a href="#" class="comment">3 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658b441416c46489696b9bbc">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
+                                    <div class="cata new">new</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
+                                    <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
+                                    <a class="comment">3 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/4.png">
-                                <div class="cata new">new</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h5>
-                                <p>
-                                    Continuation of the popular first-person shooter, a
-                                    sandbox in the post-apocalyptic world of Chernobyl.
-                                    Players can finally roam a large, open, seamless world containing such iconic elements
-                                    of the original trilogy as the Chernobyl Nuclear Power Plant
-                                </p>
-                                <a href="#" class="comment">4003 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658b5c2fab01c50ded3d4fcd">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/4.png">
+                                    <div class="cata new">new</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h5>
+                                    <p>
+                                        Continuation of the popular first-person shooter, a
+                                        sandbox in the post-apocalyptic world of Chernobyl.
+                                        Players can finally roam a large, open, seamless world containing such iconic elements
+                                        of the original trilogy as the Chernobyl Nuclear Power Plant
+                                    </p>
+                                    <a href="#" class="comment">4003 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/5.png">
-                                <div class="cata new">new</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>GTA 6 </h5>
-                                <p>
-                                    Continuation of the cult series of games from Rockstar. In it,
-                                    players return to the fan-favorite Vice City - a sunny city surrounded by the ocean.
-                                </p>
-                                <a href="#" class="comment">5321 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658b61d9ab01c50ded3d4fcf">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/5.png">
+                                    <div class="cata new">new</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>GTA 6 </h5>
+                                    <p>
+                                        Continuation of the cult series of games from Rockstar. In it,
+                                        players return to the fan-favorite Vice City - a sunny city surrounded by the ocean.
+                                    </p>
+                                    <a href="#" class="comment">5321 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/6.png">
-                                <div class="cata adventure">Adventure</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>About the game - The Wolf Among Us 2 </h5>
-                                <p>
-                                    The second season of Telltale Games' episodic adventure based on the Fables comic book series.
-                                    The action takes place six months after the events of the first season.
-                                </p>
-                                <a href="#" class="comment">84 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658b680dab01c50ded3d4fd0">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/6.png">
+                                    <div class="cata adventure">Adventure</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>About the game - The Wolf Among Us 2 </h5>
+                                    <p>
+                                        The second season of Telltale Games' episodic adventure based on the Fables comic book series.
+                                        The action takes place six months after the events of the first season.
+                                    </p>
+                                    <a href="#" class="comment">84 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <div class="recent-game-item">
