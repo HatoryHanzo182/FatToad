@@ -170,44 +170,48 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/7.png">
-                                <div class="cata adventure">adventures</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>About The Witcher 3: Wild Hunt</h5>
-                                <p>
-                                    The final part of the trilogy of adventures of Geralt of Rivia. In 2022,
-                                    all its owners received a free next-gen update to the Complete Edition - the most complete
-                                    edition of The Witcher 3, including all add-ons
-                                </p>
-                                <a href="#" class="comment">815 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658c2a7aad081adb939841a1">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/7.png">
+                                    <div class="cata adventure">adventures</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>About The Witcher 3: Wild Hunt</h5>
+                                    <p>
+                                        The final part of the trilogy of adventures of Geralt of Rivia. In 2022,
+                                        all its owners received a free next-gen update to the Complete Edition - the most complete
+                                        edition of The Witcher 3, including all add-ons
+                                    </p>
+                                    <a href="#" class="comment">815 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="recent-game-item">
-                            <div class="rgi-thumb set-bg" data-setbg="img/recent-game/8.png">
-                                <div class="cata shooter">shooter</div>
-                            </div>
-                            <div class="rgi-content">
-                                <h5>Doom</h5>
-                                <p>
-                                    The next part of the famous series, in which the player, in the role of a space marine,
-                                    will go a long way through the corridors of an abandoned space base on Mars in order to
-                                    reach Hell itself and destroy as many demons there as possible.
-                                </p>
-                                <a href="#" class="comment">559 Comments</a>
-                                <div class="rgi-extra">
-                                    <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                    <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                        <a href="<%=context%>/blogs/single_blog?Id=658c52aead081adb939841a2">
+                            <div class="recent-game-item">
+                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/8.png">
+                                    <div class="cata shooter">shooter</div>
+                                </div>
+                                <div class="rgi-content">
+                                    <h5>Doom</h5>
+                                    <p>
+                                        The next part of the famous series, in which the player, in the role of a space marine,
+                                        will go a long way through the corridors of an abandoned space base on Mars in order to
+                                        reach Hell itself and destroy as many demons there as possible.
+                                    </p>
+                                    <a href="#" class="comment">559 Comments</a>
+                                    <div class="rgi-extra">
+                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="site-pagination">
