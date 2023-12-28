@@ -2,6 +2,7 @@
 <%
     String context = request.getContextPath();
     String page_body = (String) request.getAttribute("page-body");
+    String context_culture = context + "/" + request.getAttribute("culture");
 %>
 <html lang="zxx">
 <head>
@@ -28,7 +29,7 @@
     <header class="header-section">
         <div class="container">
             <!-- Logo. -->
-            <a class="site-logo" href="<%=context%>/">
+            <a class="site-logo" href="<%=context%>/home">
                 <img src="<%=context%>/img/FatToadTitle.gif" alt="logo"/>
             </a>
             <h1>@FAT_TOAD</h1>
@@ -38,11 +39,11 @@
             <!-- Menu. -->
             <nav class="main-menu">
                 <ul>
-                    <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/home">Home</a></li>
-                    <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
-                    <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
-                    <li><%= "forums.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/forums">Forums</a></li>
-                    <li><%= "contact.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/contact">Contact</a></li>
+                    <li><a href="<%=context%>/home">Home</a></li>
+                    <li><a href="<%=context%>/games">Games</a></li>
+                    <li><a href="<%=context%>/blogs">Blog</a></li>
+                    <li><a href="<%=context%>/forums">Forums</a></li>
+                    <li><a href="<%=context%>/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,11 +58,11 @@
     <footer class="footer-section">
         <div class="container">
             <ul class="footer-menu">
-                <li><%= "home.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/">Home</a></li>
-                <li><%= "games.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/games">Games</a></li>
-                <li><%= "blogs.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/blogs">Blog</a></li>
-                <li><%= "forums.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/forums">Forums</a></li>
-                <li><%= "contact.jsp".equals(page_body) ? "" : ""%><a href="<%=context%>/contact">Contact</a></li>
+                <li><a href="<%=context%>/">Home</a></li>
+                <li><a href="<%=context%>/games">Games</a></li>
+                <li><a href="<%=context%>/blogs">Blog</a></li>
+                <li><a href="<%=context%>/forums">Forums</a></li>
+                <li><a href="<%=context%>/contact">Contact</a></li>
             </ul>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             <p class="copyright">

@@ -136,7 +136,7 @@
                         <div class="rgi-content">
                             <h5>Amazing solution from NetherRealm Studios</h5>
                             <p>An interesting and non-standard solution to add new characters from the developers.</p>
-                            <a href="#" class="comment">278 Comments</a>
+                            <a href="#" class="comment">2 Comments</a>
                             <div class="rgi-extra">
                                 <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
                                 <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
@@ -154,7 +154,7 @@
                         <div class="rgi-content">
                             <h5>RDR2 - New servers</h5>
                             <p>Immerse yourself in the world of the wild west on new servers.</p>
-                            <a href="#" class="comment">3 Comments</a>
+                            <a href="#" class="comment">1 Comments</a>
                             <div class="rgi-extra">
                                 <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
                                 <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
@@ -172,7 +172,7 @@
                         <div class="rgi-content">
                             <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
                             <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
-                            <a href="#" class="comment">3 Comments</a>
+                            <a href="#" class="comment">0 Comments</a>
                             <div class="rgi-extra">
                                 <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
                                 <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>

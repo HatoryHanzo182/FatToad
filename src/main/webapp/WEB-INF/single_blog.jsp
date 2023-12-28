@@ -2,9 +2,11 @@
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="reddit.fat_toad.db.Models.BlogsModel" %>
+<%@ page import="reddit.fat_toad.db.Models.CommentModel" %>
 <%
     String context = request.getContextPath();
     ArrayList<LastNewsLineModel> latest_news_line_data = (ArrayList<LastNewsLineModel>)request.getAttribute("LatestNewsData");
+    ArrayList<CommentModel> comments_data = (ArrayList<CommentModel>)request.getAttribute("CommentsData");
     BlogsModel blog_data = (BlogsModel)request.getAttribute("BlogsData");
     String blog_article = (String)request.getAttribute("BlogArticle");
 %>
@@ -57,52 +59,40 @@
                 </div>
                 <div class="blog-content">
                     <h3><%=blog_data.GetBlogTitle()%></h3>
-                    <a class="meta-comment"><%=blog_data.GetComments()%> comment</a>
+                    <a class="meta-comment"><%=comments_data.size()%> comment</a>
                     <p>
                         <%=blog_article%>
                     </p>
                 </div>
-                <div class="comment-warp">
-                    <h4 class="comment-title">Coments</h4>
-                    <ul class="comment-list">
-                        <li>
-                            <div class="comment">
-                                <div class="comment-avator set-bg" data-setbg="<%=context%>/img/authors/1.jpg"></div>
-                                <div class="comment-content">
-                                    <h5>James Smith <span>June 21, 2023</span></h5>
-                                    <p>
-                                        The leaks from that same Amazon store turned out to be so true).
-                                    </p>
-                                    <a href="" class="reply">Reply</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="comment">
-                                <div class="comment-avator set-bg" data-setbg="<%=context%>/img/authors/2.jpg"></div>
-                                <div class="comment-content">
-                                    <h5>Donald Trump <span>June 21, 2023</span></h5>
-                                    <p>
-                                        Open pre-order in Turkey.
-                                    </p>
-                                    <a href="" class="reply">Reply</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Coments. -->
+                <% if (comments_data != null && !comments_data.isEmpty())
+                { %>
+                    <div class="comment-warp">
+                        <h4 class="comment-title">Coments</h4>
+                        <ul class="comment-list">
+                            <% for (CommentModel comments_data_i : comments_data)
+                            { %>
+                                <li>
+                                    <div class="comment">
+                                        <div class="comment-avator set-bg" data-setbg="<%=context%>/img/<%=comments_data_i.GetSenderAvatar()%>"></div>
+                                        <div class="comment-content">
+                                            <h5><%=comments_data_i.GetSender()%> <span><%=comments_data_i.GetDate()%></span></h5>
+                                            <p>
+                                                <%=comments_data_i.GetComment()%>
+                                            </p>
+                                            <a href="" class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                <% } %>
                 <div class="comment-form-warp">
                     <h4 class="comment-title">Leave Your Comment</h4>
                     <form class="comment-form">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" placeholder="Email">
-                            </div>
                             <div class="col-lg-12">
-                                <input type="text" placeholder="Subject">
                                 <textarea placeholder="Message"></textarea>
                                 <button class="site-btn btn-sm">Send</button>
                             </div>

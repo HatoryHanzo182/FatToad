@@ -3,6 +3,7 @@ package reddit.fat_toad.servlets;
 import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
 import reddit.fat_toad.db.Models.BlogsModel;
+import reddit.fat_toad.db.Models.CommentModel;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 @Singleton
 public class SingleBlogServlet extends HttpServlet
@@ -28,6 +30,7 @@ public class SingleBlogServlet extends HttpServlet
             req.setAttribute("BlogArticle", GetBlogArticle("articles/" + _this_article.GetBlogArticle()));
         }
 
+        req.setAttribute("CommentsData", ViewComments(blog_id));
         req.setAttribute("LatestNewsData", DB.GetLastNewsLine());
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);
@@ -46,6 +49,19 @@ public class SingleBlogServlet extends HttpServlet
             }
         }
         return false;
+    }
+
+    private ArrayList<CommentModel> ViewComments(String who_owns)
+    {
+        ArrayList<CommentModel> comments = new ArrayList<>();
+
+        for (CommentModel comment : DB.GetComments())
+        {
+            if(who_owns.equals(comment.GetWhoOwns()))
+                comments.add(comment);
+        }
+
+        return comments;
     }
 
     private String GetBlogArticle(String id)

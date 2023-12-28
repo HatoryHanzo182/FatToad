@@ -59,7 +59,7 @@
                                 <div class="rgi-content">
                                     <h5>Amazing solution from NetherRealm Studios</h5>
                                     <p>An interesting and non-standard solution to add new characters from the developers.</p>
-                                    <a class="comment">278 Comments</a>
+                                    <a class="comment">2 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -77,7 +77,7 @@
                                 <div class="rgi-content">
                                     <h5>RDR2 - New servers </h5>
                                     <p>Immerse yourself in the world of the wild west on new servers. </p>
-                                    <a href="#" class="comment">3 Comments</a>
+                                    <a href="#" class="comment">1 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -95,7 +95,7 @@
                                 <div class="rgi-content">
                                     <h5>PlayStation's users are having their accounts blocked en masse and permanently: what's happening</h5>
                                     <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
-                                    <a class="comment">3 Comments</a>
+                                    <a class="comment">0 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -118,7 +118,7 @@
                                         Players can finally roam a large, open, seamless world containing such iconic elements
                                         of the original trilogy as the Chernobyl Nuclear Power Plant
                                     </p>
-                                    <a href="#" class="comment">4003 Comments</a>
+                                    <a href="#" class="comment">3 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -139,7 +139,7 @@
                                         Continuation of the cult series of games from Rockstar. In it,
                                         players return to the fan-favorite Vice City - a sunny city surrounded by the ocean.
                                     </p>
-                                    <a href="#" class="comment">5321 Comments</a>
+                                    <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -160,7 +160,7 @@
                                         The second season of Telltale Games' episodic adventure based on the Fables comic book series.
                                         The action takes place six months after the events of the first season.
                                     </p>
-                                    <a href="#" class="comment">84 Comments</a>
+                                    <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -182,7 +182,7 @@
                                         all its owners received a free next-gen update to the Complete Edition - the most complete
                                         edition of The Witcher 3, including all add-ons
                                     </p>
-                                    <a href="#" class="comment">815 Comments</a>
+                                    <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
@@ -204,7 +204,7 @@
                                         will go a long way through the corridors of an abandoned space base on Mars in order to
                                         reach Hell itself and destroy as many demons there as possible.
                                     </p>
-                                    <a href="#" class="comment">559 Comments</a>
+                                    <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
                                         <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
                                         <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>

@@ -3,17 +3,28 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <!-- Configuration Guice -->
   <filter>
     <filter-name>GuiceFilter</filter-name>
     <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+  </filter>
+  <!-- Configuration CultureFilter -->
+  <filter>
+    <filter-name>CultureFilter</filter-name>
+    <filter-class>reddit.fat_toad.filters.CultureFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>GuiceFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <filter-mapping>
+    <filter-name>CultureFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <listener>
     <listener-class>reddit.fat_toad.ioc.GuiceServletConfig</listener-class>
   </listener>
+  <!-- Configuration HomeServlet -->
   <servlet>
     <servlet-name>HomeServlet</servlet-name>
     <servlet-class>reddit.fat_toad.servlets.HomeServlet</servlet-class>

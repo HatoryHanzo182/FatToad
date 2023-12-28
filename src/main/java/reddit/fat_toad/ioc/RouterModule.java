@@ -2,13 +2,14 @@ package reddit.fat_toad.ioc;
 
 import com.google.inject.servlet.ServletModule;
 import reddit.fat_toad.servlets.*;
+import reddit.fat_toad.filters.*;
 
 public class RouterModule extends ServletModule
 {
     @Override
     protected void configureServlets()
     {
-        serve("/").with(HomeServlet.class);
+        filter("/*").through(CultureFilter.class);
         serve("/home").with(HomeServlet.class);
         serve("/games").with(GamesServlet.class);
         serve("/blogs").with(BlogsServlet.class);
@@ -17,5 +18,6 @@ public class RouterModule extends ServletModule
         serve("/contact").with(ContactServlet.class);
         serve("/signin").with(SignInServlet.class);
         serve("/signup").with(SignUpServlet.class);
+        serveRegex("/(\\w\\w)/home").with(HomeServlet.class);
     }
 }

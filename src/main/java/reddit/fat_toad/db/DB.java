@@ -11,6 +11,7 @@ import com.mongodb.client.*;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import reddit.fat_toad.db.Models.BlogsModel;
+import reddit.fat_toad.db.Models.CommentModel;
 import reddit.fat_toad.db.Models.LastNewsLineModel;
 import reddit.fat_toad.db.Models.UsersModel;
 import java.io.InputStreamReader;
@@ -28,6 +29,7 @@ public class DB
     private static ArrayList<LastNewsLineModel> _last_news_line;
     private static ArrayList<UsersModel> _users;
     private static ArrayList<BlogsModel> _blogs;
+    private static ArrayList<CommentModel> _comments;
 
 
     public DB()
@@ -35,6 +37,7 @@ public class DB
         SetLatestNews();
         SetUsers();
         SetBlogs();
+        SetComment();
     }
 
     // <--====== Build connection sector. ======-->
@@ -166,6 +169,39 @@ public class DB
         _blogs = blogs;
     }
 
+    private void SetComment()
+    {
+        BuildConnection();
+
+        ArrayList<CommentModel> comments = new ArrayList<>();
+
+        try (MongoClient mongo_client = MongoClients.create(_settings))
+        {
+            try
+            {
+                MongoDatabase database = mongo_client.getDatabase(_base_name);
+                MongoCollection<Document> collection = database.getCollection("Comments");
+                FindIterable<Document> document_comments = collection.find();
+
+                for (Document document : document_comments)
+                {
+                    CommentModel comment_i = new CommentModel();
+
+                    comment_i.SetId((ObjectId) document.get("_id"));
+                    comment_i.SetSender((String) document.get("sender"));
+                    comment_i.SetSenderAvatar((String) document.get("sender_avatar"));
+                    comment_i.SetDate((String) document.get("date"));
+                    comment_i.SetComment((String) document.get("comment"));
+                    comment_i.SetWhoOwns((ObjectId) document.get("who_owns"));
+
+                    comments.add(comment_i);
+                }
+            }
+            catch (Exception ex) { ex.printStackTrace(); }
+        }
+        _comments = comments;
+    }
+
     // <--====== Receiving data from the client sector. ======-->
     public static void AddNewUser(UsersModel new_user)
     {
@@ -191,4 +227,5 @@ public class DB
     public static ArrayList<LastNewsLineModel> GetLastNewsLine() { return _last_news_line; }
     public static ArrayList<UsersModel> GetUsers() { return _users; }
     public static ArrayList<BlogsModel> GetBlogs() { return _blogs; }
+    public static ArrayList<CommentModel> GetComments() { return _comments; }
 }
