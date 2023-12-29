@@ -1,6 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
+<%
+  String context = request.getContextPath();
+%>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section. -->
@@ -15,7 +18,7 @@
         {
       %>
       <div class="nt-item">
-        <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+        <span class="cata <%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
         <%= news_line_i.GetNews() %>
       </div>
       <%
@@ -25,7 +28,7 @@
   </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="img/page-top-bg/4.jpg">
+<section class="page-info-section set-bg" data-setbg="<%=context%>/img/page-top-bg/4.jpg">
   <div class="pi-content">
     <div class="container">
       <div class="row">
@@ -42,7 +45,7 @@
   </div>
 </section>
 <!-- Page section -->
-<section class="page-section community-page set-bg" data-setbg="img/community-bg.jpg">
+<section class="page-section community-page set-bg" data-setbg="<%=context%>/img/community-bg.jpg">
   <div class="community-warp spad">
     <div class="container">
       <div class="row">
@@ -62,7 +65,7 @@
       <ul class="community-post-list">
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/1.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/1.jpg"></div>
             <div class="post-content">
               <h5>James Smith<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -76,7 +79,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/8.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/8.jpg"></div>
             <div class="post-content">
               <h5>Partik Williams<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -93,7 +96,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/5.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/5.jpg"></div>
             <div class="post-content">
               <h5>Cris The Man<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -106,7 +109,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/1.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/1.jpg"></div>
             <div class="post-content">
               <h5>James Smith<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -120,7 +123,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/4.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/4.jpg"></div>
             <div class="post-content">
               <h5>Cris The Man<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -134,7 +137,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/6.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/6.jpg"></div>
             <div class="post-content">
               <h5>James Smith<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>
@@ -148,7 +151,7 @@
         </li>
         <li>
           <div class="community-post">
-            <div class="author-avator set-bg" data-setbg="img/authors/7.jpg"></div>
+            <div class="author-avator set-bg" data-setbg="<%=context%>/img/authors/7.jpg"></div>
             <div class="post-content">
               <h5>Maria Doe<span>posted an update</span></h5>
               <div class="post-date">June 21, 2018</div>

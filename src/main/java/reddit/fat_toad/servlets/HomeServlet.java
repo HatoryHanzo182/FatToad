@@ -14,11 +14,10 @@ public class HomeServlet extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        System.out.println("Request for /home with culture: " + req.getAttribute("culture"));
         req.setAttribute("LatestNewsData", DB.GetLastNewsLine());
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);
         req.setAttribute("page-body", "home.jsp");
-        req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

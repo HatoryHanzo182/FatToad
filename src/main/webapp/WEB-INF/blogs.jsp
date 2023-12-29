@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%
     String context = request.getContextPath();
+    String context_culture = context + "/" + request.getAttribute("culture");
 %>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
@@ -18,7 +19,7 @@
                 {
             %>
             <div class="nt-item">
-                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <span class="cata <%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
                 <%= news_line_i.GetNews() %>
             </div>
             <%
@@ -28,7 +29,7 @@
     </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="img/page-top-bg/1.png">
+<section class="page-info-section set-bg" data-setbg="<%=context%>/img/page-top-bg/1.png">
     <div class="pi-content">
         <div class="container">
             <div class="row">
@@ -51,9 +52,9 @@
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b17c516c46489696b9bb9">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b17c516c46489696b9bb9">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/1.png">
                                     <div class="cata new">new</div>
                                 </div>
                                 <div class="rgi-content">
@@ -61,17 +62,17 @@
                                     <p>An interesting and non-standard solution to add new characters from the developers.</p>
                                     <a class="comment">2 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b3c0316c46489696b9bbb">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b3c0316c46489696b9bbb">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/2.png">
                                     <div class="cata new">new</div>
                                 </div>
                                 <div class="rgi-content">
@@ -79,17 +80,17 @@
                                     <p>Immerse yourself in the world of the wild west on new servers. </p>
                                     <a href="#" class="comment">1 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b441416c46489696b9bbc">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b441416c46489696b9bbc">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/3.png">
                                     <div class="cata new">new</div>
                                 </div>
                                 <div class="rgi-content">
@@ -97,17 +98,17 @@
                                     <p>Over the past couple of days, many PlayStation users have encountered massive bans. </p>
                                     <a class="comment">0 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b5c2fab01c50ded3d4fcd">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b5c2fab01c50ded3d4fcd">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/4.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/4.png">
                                     <div class="cata new">new</div>
                                 </div>
                                 <div class="rgi-content">
@@ -120,17 +121,17 @@
                                     </p>
                                     <a href="#" class="comment">3 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b61d9ab01c50ded3d4fcf">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b61d9ab01c50ded3d4fcf">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/5.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/5.png">
                                     <div class="cata new">new</div>
                                 </div>
                                 <div class="rgi-content">
@@ -141,17 +142,17 @@
                                     </p>
                                     <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658b680dab01c50ded3d4fd0">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658b680dab01c50ded3d4fd0">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/6.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/6.png">
                                     <div class="cata adventure">adventure</div>
                                 </div>
                                 <div class="rgi-content">
@@ -162,17 +163,17 @@
                                     </p>
                                     <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658c2a7aad081adb939841a1">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658c2a7aad081adb939841a1">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/7.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/7.png">
                                     <div class="cata adventure">adventures</div>
                                 </div>
                                 <div class="rgi-content">
@@ -184,17 +185,17 @@
                                     </p>
                                     <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<%=context%>/blogs/single_blog?Id=658c52aead081adb939841a2">
+                        <a href="<%=context_culture%>/blogs/single_blog?Id=658c52aead081adb939841a2">
                             <div class="recent-game-item">
-                                <div class="rgi-thumb set-bg" data-setbg="img/recent-game/8.png">
+                                <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/8.png">
                                     <div class="cata shooter">shooter</div>
                                 </div>
                                 <div class="rgi-content">
@@ -206,8 +207,8 @@
                                     </p>
                                     <a href="#" class="comment">0 Comments</a>
                                     <div class="rgi-extra">
-                                        <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
-                                        <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                                        <div class="rgi-star"><img src="<%=context%>/img/icons/star.png" alt=""></div>
+                                        <div class="rgi-heart"><img src="<%=context%>/img/icons/heart.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +235,7 @@
                     <h4 class="fw-title">Top Posts</h4>
                     <div class="latest-blog">
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/1.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>Mercer and Gall. Best friends. Legendary thieves. Brothers in the Guild and the Nightingale's oath. </p>
@@ -242,7 +243,7 @@
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/2.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>Completing The Witcher 3 100% is a real test of perseverance. </p>
@@ -250,7 +251,7 @@
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/3.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>The first truly cool Spider-Man game in many years.</p>
@@ -264,7 +265,7 @@
                     <h4 class="fw-title">Top Comments</h4>
                     <div class="top-comment">
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/1.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/1.jpg"></div>
                             <div class="tc-content">
                                 <p>
                                     <a href="#">James Smith</a>
@@ -277,7 +278,7 @@
                             </div>
                         </div>
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/2.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/2.jpg"></div>
                             <div class="tc-content">
                                 <p>
                                     <a href="#">Donald Trump</a>
@@ -289,7 +290,7 @@
                             </div>
                         </div>
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/3.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/3.jpg"></div>
                             <div class="tc-content">
                                 <p><a href="#">James Staitment</a>
                                     <span>on</span>
@@ -303,7 +304,7 @@
                 </div>
                 <!-- widget -->
                 <div class="widget-item">
-                    <div class="feature-item set-bg" data-setbg="img/features/1.jpg">
+                    <div class="feature-item set-bg" data-setbg="<%=context%>/img/features/1.jpg">
                         <span class="cata adventure">adventures</span>
                         <div class="fi-content text-white">
                             <h5><a href="#">World of warcraft</a></h5>
@@ -315,7 +316,7 @@
                 <!-- widget -->
                 <div class="widget-item">
                     <div class="review-item">
-                        <div class="review-cover set-bg" data-setbg="img/review/1.png">
+                        <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/1.png">
                             <div class="score yellow">8.3</div>
                         </div>
                         <div class="review-text">

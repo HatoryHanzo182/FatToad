@@ -9,7 +9,7 @@
 <!-- Hero section. -->
 <section class="hero-section">
     <div class="hero-slider owl-carousel">
-        <div class="hs-item set-bg" data-setbg="img/Slider1ForHomePage.png">
+        <div class="hs-item set-bg" data-setbg="<%=context%>/img/Slider1ForHomePage.png">
             <div class="hs-text">
                 <div class="container">
                     <h2>The Best <span>Games</span> Out There</h2>
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="img/Slider2ForHomePage.png">
+        <div class="hs-item set-bg" data-setbg="<%=context%>/img/Slider2ForHomePage.png">
             <div class="hs-text">
                 <div class="container">
                     <h2>The Best <span>Games</span> Out There</h2>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="img/Slider3ForHomePage.png">
+        <div class="hs-item set-bg" data-setbg="<%=context%>/img/Slider3ForHomePage.png">
             <div class="hs-text">
                 <div class="container">
                     <h2>The Best <span>Games</span> Out There</h2>
@@ -63,7 +63,7 @@
                 {
             %>
             <div class="nt-item">
-                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <span class="cata <%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
                 <%= news_line_i.GetNews() %>
             </div>
             <%
@@ -77,7 +77,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/1.jpg">
+                <div class="feature-item set-bg" data-setbg="<%=context%>/img/features/1.jpg">
                     <span class="cata adventure">adventures</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">World of warcraft</a></h5>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/2.png">
+                <div class="feature-item set-bg" data-setbg="<%=context%>/img/features/2.png">
                     <span class="cata new">new</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">THE WAR HAS CHANGED</a></h5>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/3.png">
+                <div class="feature-item set-bg" data-setbg="<%=context%>/img/features/3.png">
                     <span class="cata adventure">adventures</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">Uncharted 4</a></h5>
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 p-0">
-                <div class="feature-item set-bg" data-setbg="img/features/4.png">
+                <div class="feature-item set-bg" data-setbg="<%=context%>/img/features/4.png">
                     <span class="cata fighting">fighting</span>
                     <div class="fi-content text-white">
                         <h5><a href="#">IT'S IN OUR BLOOD!</a></h5>
@@ -120,7 +120,7 @@
     </div>
 </section>
 <!-- Recent game articles section  -->
-<section class="recent-game-section spad set-bg" data-setbg="img/review-bg-2.png">
+<section class="recent-game-section spad set-bg" data-setbg="<%=context%>/img/review-bg-2.png">
     <div class="container">
         <div class="section-title text-white">
             <div class="cata new">new</div>
@@ -130,7 +130,7 @@
             <div class="col-lg-4 col-md-6">
                 <a href="<%=context%>/blogs/single_blog?Id=658b17c516c46489696b9bb9">
                     <div class="recent-game-item">
-                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
+                        <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/1.png">
                             <div class="cata new">new</div>
                         </div>
                         <div class="rgi-content">
@@ -148,7 +148,7 @@
             <div class="col-lg-4 col-md-6">
                 <a href="<%=context%>/blogs/single_blog?Id=658b3c0316c46489696b9bbb">
                     <div class="recent-game-item">
-                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+                        <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/2.png">
                             <div class="cata new">new</div>
                         </div>
                         <div class="rgi-content">
@@ -166,7 +166,7 @@
             <div class="col-lg-4 col-md-6">
                 <a href="<%=context%>/blogs/single_blog?Id=658b441416c46489696b9bbc">
                     <div class="recent-game-item">
-                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
+                        <div class="rgi-thumb set-bg" data-setbg="<%=context%>/img/recent-game/3.png">
                             <div class="cata new">new</div>
                         </div>
                         <div class="rgi-content">
@@ -193,7 +193,7 @@
                 <div class="tournament-item mb-4 mb-lg-0">
                     <div class="ti-notic">Premium Tournament</div>
                     <div class="ti-content">
-                        <div class="ti-thumb set-bg" data-setbg="img/tournament/1.png"></div>
+                        <div class="ti-thumb set-bg" data-setbg="<%=context%>/img/tournament/1.png"></div>
                         <div class="ti-text">
                             <h4>Dota2</h4>
                             <ul>
@@ -211,7 +211,7 @@
                 <div class="tournament-item">
                     <div class="ti-notic">Premium Tournament</div>
                     <div class="ti-content">
-                        <div class="ti-thumb set-bg" data-setbg="img/tournament/2.png"></div>
+                        <div class="ti-thumb set-bg" data-setbg="<%=context%>/img/tournament/2.png"></div>
                         <div class="ti-text">
                             <h4>Warcraft III</h4>
                             <ul>
@@ -229,7 +229,7 @@
     </div>
 </section>
 <!-- Review section. -->
-<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
+<section class="review-section spad set-bg" data-setbg="<%=context%>/img/review-bg.png">
     <div class="container">
         <div class="section-title">
             <div class="cata new">new</div>
@@ -238,7 +238,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/1.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/1.png">
                         <div class="score yellow">8.3</div>
                     </div>
                     <div class="review-text">
@@ -252,7 +252,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/2.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/2.png">
                         <div class="score purple">9.0</div>
                     </div>
                     <div class="review-text">
@@ -267,7 +267,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/3.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/3.png">
                         <div class="score green">8.9</div>
                     </div>
                     <div class="review-text">
@@ -280,7 +280,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/4.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/4.png">
                         <div class="score pink">7.6</div>
                     </div>
                     <div class="review-text">
@@ -317,7 +317,7 @@
                     <h4 class="fw-title">Top Posts</h4>
                     <div class="latest-blog">
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/1.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>Mercer and Gall. Best friends. Legendary thieves. Brothers in the Guild and the Nightingale's oath. </p>
@@ -325,7 +325,7 @@
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/2.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>Completing The Witcher 3 100% is a real test of perseverance. </p>
@@ -333,7 +333,7 @@
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>img/latest-blog/3.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>The first truly cool Spider-Man game in many years.</p>
@@ -348,7 +348,7 @@
                     <h4 class="fw-title">Top Comments</h4>
                     <div class="top-comment">
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/1.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/1.jpg"></div>
                             <div class="tc-content">
                                 <p>
                                     <a href="#">James Smith</a>
@@ -361,7 +361,7 @@
                             </div>
                         </div>
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/2.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/2.jpg"></div>
                             <div class="tc-content">
                                 <p>
                                     <a href="#">Donald Trump</a>
@@ -373,7 +373,7 @@
                             </div>
                         </div>
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/3.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/3.jpg"></div>
                             <div class="tc-content">
                                 <p><a href="#">James Staitment</a>
                                     <span>on</span>
@@ -384,7 +384,7 @@
                             </div>
                         </div>
                         <div class="tc-item">
-                            <div class="tc-thumb set-bg" data-setbg="img/authors/4.jpg"></div>
+                            <div class="tc-thumb set-bg" data-setbg="<%=context%>/img/authors/4.jpg"></div>
                             <div class="tc-content">
                                 <p>
                                     <a href="#">Jared Smith</a>

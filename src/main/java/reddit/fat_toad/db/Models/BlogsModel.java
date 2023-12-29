@@ -10,7 +10,6 @@ public class BlogsModel
     private String _small_text_title;
     private String _recent_game;
     private String _blog_title;
-    private int _comments;
     private String _blog_article;
     private String _status;
 
@@ -21,7 +20,6 @@ public class BlogsModel
     public String GetSmallTextTitle() { return _small_text_title; }
     public String GetRecentGame() { return _recent_game; }
     public String GetBlogTitle() { return _blog_title; }
-    public int GetComments() { return _comments; }
     public String GetBlogArticle() { return _blog_article; }
     public String GetStatus() { return _status; }
 
@@ -31,7 +29,6 @@ public class BlogsModel
     public void SetSmallTextTitle(String small_text_title) { this._small_text_title = small_text_title; }
     public void SetRecentGame(String _recent_game) { this._recent_game = _recent_game; }
     public void SetBlogTitle(String blog_title) { this._blog_title = blog_title; }
-    public void SetComments(int comments) { this._comments = comments; }
     public void SetBlogArticle(String blog_article) { this._blog_article = blog_article; }
     public void SetStatus(String status) { this._status = status; }
 }

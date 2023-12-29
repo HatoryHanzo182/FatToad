@@ -19,5 +19,10 @@ public class RouterModule extends ServletModule
         serve("/signin").with(SignInServlet.class);
         serve("/signup").with(SignUpServlet.class);
         serveRegex("/(\\w\\w)/home").with(HomeServlet.class);
+        serveRegex("/(\\w\\w)/games").with(GamesServlet.class);
+        serveRegex("/(\\w\\w)/blogs").with(BlogsServlet.class);
+        serveRegex("/(\\w\\w)/blogs/single_blog").with(SingleBlogServlet.class);
+        serveRegex("/(\\w\\w)/forums").with(ForumsServlet.class);
+        serveRegex("/(\\w\\w)/contact").with(ContactServlet.class);
     }
 }

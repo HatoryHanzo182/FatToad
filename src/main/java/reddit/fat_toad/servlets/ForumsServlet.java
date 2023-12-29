@@ -18,6 +18,6 @@ public class ForumsServlet extends HttpServlet
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);
         req.setAttribute("page-body", "forums.jsp");
-        req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

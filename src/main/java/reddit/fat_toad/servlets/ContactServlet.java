@@ -18,6 +18,6 @@ public class ContactServlet extends HttpServlet
         req.setAttribute("ShowMenu", true);
         req.setAttribute("ShowFooter", true);
         req.setAttribute("page-body", "contact.jsp");
-        req.getRequestDispatcher("WEB-INF/_layout.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/_layout.jsp").forward(req, resp);
     }
 }

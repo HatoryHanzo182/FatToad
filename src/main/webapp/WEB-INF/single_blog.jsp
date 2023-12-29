@@ -21,7 +21,7 @@
                 {
             %>
             <div class="nt-item">
-                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <span class="cata <%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
                 <%= news_line_i.GetNews() %>
             </div>
             <%

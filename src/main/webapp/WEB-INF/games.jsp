@@ -1,6 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="reddit.fat_toad.db.Models.LastNewsLineModel" %>
 <%@ page import="java.util.ArrayList" %>
+<%
+    String context = request.getContextPath();
+%>
 <!-- Page Preloder -->
 <div id="preloder"><div class="loader"></div></div>
 <!-- Latest news section. -->
@@ -15,7 +18,7 @@
                 {
             %>
             <div class="nt-item">
-                <span class="<%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
+                <span class="cata <%= news_line_i.GetStatus() %>"><%= news_line_i.GetStatus() %></span>
                 <%= news_line_i.GetNews() %>
             </div>
             <%
@@ -25,7 +28,7 @@
     </div>
 </div>
 <!-- Page info section -->
-<section class="page-info-section set-bg" data-setbg="img/page-top-bg/3.jpg">
+<section class="page-info-section set-bg" data-setbg="<%=context%>/img/page-top-bg/3.jpg">
     <div class="pi-content">
         <div class="container">
             <div class="row">
@@ -46,7 +49,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/5.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/5.png">
                         <div class="score yellow">8.6</div>
                     </div>
                     <div class="review-text">
@@ -69,7 +72,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/6.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/6.png">
                         <div class="score green">9.8</div>
                     </div>
                     <div class="review-text">
@@ -92,7 +95,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/7.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/7.png">
                         <div class="score purple">4.2</div>
                     </div>
                     <div class="review-text">
@@ -114,7 +117,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/8.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/8.png">
                         <div class="score black">8.9</div>
                     </div>
                     <div class="review-text">
@@ -136,7 +139,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/9.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/9.png">
                         <div class="score pink">10</div>
                     </div>
                     <div class="review-text">
@@ -158,7 +161,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/10.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/10.png">
                         <div class="score yellow">8.7</div>
                     </div>
                     <div class="review-text">
@@ -185,7 +188,7 @@
     </div>
 </section>
 <!-- Review section -->
-<section class="review-section review-dark spad set-bg" data-setbg="img/recent-game-bg.png">
+<section class="review-section review-dark spad set-bg" data-setbg="<%=context%>/img/recent-game-bg.png">
     <div class="container">
         <div class="section-title text-white">
             <div class="cata new">new</div>
@@ -194,7 +197,7 @@
         <div class="row text-white">
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/1.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/1.png">
                         <div class="score yellow">8.3</div>
                     </div>
                     <div class="review-text">
@@ -208,7 +211,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/2.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/2.png">
                         <div class="score purple">9.0</div>
                     </div>
                     <div class="review-text">
@@ -223,7 +226,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/3.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/3.png">
                         <div class="score green">8.9</div>
                     </div>
                     <div class="review-text">
@@ -236,7 +239,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="review-item">
-                    <div class="review-cover set-bg" data-setbg="img/review/4.png">
+                    <div class="review-cover set-bg" data-setbg="<%=context%>/img/review/4.png">
                         <div class="score pink">7.6</div>
                     </div>
                     <div class="review-text">
