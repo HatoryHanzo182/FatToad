@@ -333,7 +333,7 @@
                             </div>
                         </div>
                         <div class="lb-item">
-                            <div class="lb-thumb set-bg" data-setbg="<%=context%>img/latest-blog/3.png"></div>
+                            <div class="lb-thumb set-bg" data-setbg="<%=context%>/img/latest-blog/3.png"></div>
                             <div class="lb-content">
                                 <div class="lb-date">December 12, 2023</div>
                                 <p>The first truly cool Spider-Man game in many years.</p>

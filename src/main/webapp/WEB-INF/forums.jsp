@@ -89,7 +89,7 @@
                 dictum nisl vitae, scelerisque nibh. Curabitur eget ipsum pulvinar nunc gravida interdum.
               </p>
               <div class="attachment-file">
-                <img src="img/attachment.jpg" alt="">
+                <img src="<%=context%>/img/attachment.jpg" alt="">
               </div>
             </div>
           </div>

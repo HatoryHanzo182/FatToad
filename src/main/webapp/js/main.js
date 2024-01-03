@@ -56,3 +56,5 @@ $(window).on('load', function()
 			duplicated: true
 		});
 })(jQuery);
+
+console.log(localStorage.getItem('token'));

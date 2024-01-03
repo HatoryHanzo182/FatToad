@@ -84,7 +84,7 @@ function NeuenBenutzerSenden()
         alert("👽 Welcome\nWe are glad that you are with us, we promise that we will not use your data for personal gain. "
             + "Just visit the site, share your impressions, communicate, and become our critic in the gaming industry.");
 
-        window.history.back();
+        window.location.href = "/FatToad/signin";
     }
 }
 

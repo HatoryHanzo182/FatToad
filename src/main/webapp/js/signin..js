@@ -50,8 +50,15 @@ function SignIn()
         return response.json();
     }).then(answer =>
     {
-        alert(answer.message);
-        window.history.back();
+        const token = answer.token;
+
+        localStorage.setItem('token', token);
+
+        if (answer.message)
+            alert(answer.message);
+
+        if (answer.token)
+            window.location.href = "/FatToad/en/home";
     }).catch(error => { console.error("Error:", error); });
 }
 

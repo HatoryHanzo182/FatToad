@@ -31,7 +31,6 @@ public class DB
     private static ArrayList<BlogsModel> _blogs;
     private static ArrayList<CommentModel> _comments;
 
-
     public DB()
     {
         SetLatestNews();

@@ -2,9 +2,14 @@ package reddit.fat_toad.servlets;
 
 import com.google.gson.Gson;
 import com.google.inject.Singleton;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import reddit.fat_toad.db.DB;
 import reddit.fat_toad.db.Models.UsersModel;
 import reddit.fat_toad.services.hash.SHA256Hashing;
+import reddit.fat_toad.services.session.Sessions;
+import javax.crypto.SecretKey;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -49,7 +54,13 @@ public class SignInServlet extends HttpServlet
             {
                 resp.setContentType("application/json");
                 resp.setCharacterEncoding("UTF-8");
-                resp.getWriter().println("{\"message\": \"🍕 Welcome!!\"}");
+
+                String token = CreateToken(user.GetEmail());
+                Sessions new_session = new Sessions();
+
+                new_session.AddSession(token);
+
+                resp.getWriter().println("{\"token\": \"" + token + "\", \"message\": \"🍕 Welcome!!\"}");
             }
             else
             {
@@ -77,5 +88,23 @@ public class SignInServlet extends HttpServlet
         }
 
         return null;
+    }
+
+    // <!--=== Tokens sector. ===--!>
+    private String CreateToken(String user_email)
+    {
+        SecretKey secret_key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+
+        try
+        {
+            System.out.print("Creating token for user email: " + user_email + "\n");
+
+            return Jwts.builder().setSubject(user_email).signWith(SignatureAlgorithm.HS256, secret_key).compact();
+        }
+        catch (Exception ex)
+        {
+            System.out.print("Error creating token:" + ex);
+            throw ex;
+        }
     }
 }
