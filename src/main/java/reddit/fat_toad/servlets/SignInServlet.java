@@ -97,13 +97,11 @@ public class SignInServlet extends HttpServlet
 
         try
         {
-            System.out.print("Creating token for user email: " + user_email + "\n");
-
             return Jwts.builder().setSubject(user_email).signWith(SignatureAlgorithm.HS256, secret_key).compact();
         }
         catch (Exception ex)
         {
-            System.out.print("Error creating token:" + ex);
+            System.out.print("Error creating token: " + ex);
             throw ex;
         }
     }

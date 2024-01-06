@@ -17,7 +17,7 @@ public class RouterModule extends ServletModule
         serve("/forums").with(ForumsServlet.class);
         serve("/contact").with(ContactServlet.class);
         serve("/signin").with(SignInServlet.class);
-        serve("/signup").with(SignUpServlet.class);
+        serve("/VT_").with(TokenValidationServlet.class);
         serveRegex("/(\\w\\w)/home").with(HomeServlet.class);
         serveRegex("/(\\w\\w)/games").with(GamesServlet.class);
         serveRegex("/(\\w\\w)/blogs").with(BlogsServlet.class);

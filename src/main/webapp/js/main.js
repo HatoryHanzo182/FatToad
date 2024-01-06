@@ -57,4 +57,29 @@ $(window).on('load', function()
 		});
 })(jQuery);
 
-console.log(localStorage.getItem('token'));
+function CheckTokenValidity(token)
+{
+	const request_data = { Id: token };
+
+	fetch('/FatToad/VT_?Id=' + token,
+		{
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(request_data)
+	}).then(response =>
+	{
+		if (!response.ok)
+			throw new Error(`HTTP error! Status: ${response.status}`);
+
+		return response.json();
+	}).then(data =>
+	{
+		if (!data.status)
+			localStorage.clear();
+	}).catch(error => { console.error('Error:', error); });
+}
+
+if (localStorage.getItem('token') != null)
+{
+	CheckTokenValidity(localStorage.getItem('token'));
+}
