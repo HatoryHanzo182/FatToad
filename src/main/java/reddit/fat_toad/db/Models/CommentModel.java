@@ -11,6 +11,7 @@ public class CommentModel
     private String _comment;
     private ObjectId _who_owns;
 
+    // <--====== Get, Set sector. ======-->
     public String GetIid() { return _id.toString(); }
     public String GetSender() { return _sender; }
     public String GetSenderAvatar() { return _sender_avatar; }

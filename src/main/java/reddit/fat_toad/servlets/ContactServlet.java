@@ -1,15 +1,20 @@
 package reddit.fat_toad.servlets;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
+import reddit.fat_toad.db.Models.UserReviewsModel;
 import reddit.fat_toad.services.session.Sessions;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.StringReader;
+import java.util.Date;
 
 @Singleton
 public class ContactServlet extends HttpServlet
@@ -37,6 +42,16 @@ public class ContactServlet extends HttpServlet
         String message = stringBuilder.toString();
         String token = req.getHeader("TOKEN");
 
+        try
+        {
+            JsonParser parser = new JsonParser();
+            JsonObject jsonObject = parser.parse(message).getAsJsonObject();
+
+            if (jsonObject.has("message"))
+                message = jsonObject.get("message").getAsString();
+        }
+        catch (Exception ex) { ex.printStackTrace(); }
+
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
 
@@ -45,13 +60,20 @@ public class ContactServlet extends HttpServlet
         else
         {
             Sessions sessions = new Sessions();
-
             String owner_message = sessions.GetOwnerByToken(token);
 
             if(owner_message == null)
                 resp.getWriter().println("{\"message\": \"🙁 We have not found evidence that you are currently logged in. Log in to get started.\"}");
             else
             {
+                UserReviewsModel review = new UserReviewsModel();
+
+                review.SetOwnerEmail(owner_message);
+                review.SetMessage(message);
+                review.SetDepartureDate(new Date());
+
+                DB.AddNewReply(review);
+
                 resp.getWriter().println("{\"message\": \"🐸 Thank you for your feedback, we will take a look at it and respond to you by email as soon as possible.\"}");
             }
         }

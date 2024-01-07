@@ -10,10 +10,8 @@ import com.mongodb.ServerApiVersion;
 import com.mongodb.client.*;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import reddit.fat_toad.db.Models.BlogsModel;
-import reddit.fat_toad.db.Models.CommentModel;
-import reddit.fat_toad.db.Models.LastNewsLineModel;
-import reddit.fat_toad.db.Models.UsersModel;
+import reddit.fat_toad.db.Models.*;
+
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
@@ -217,6 +215,22 @@ public class DB
 
             _users.add(new_user);
             collection.insertOne(new_user_document);
+        }
+        catch (Exception ex) { ex.printStackTrace(); }
+    }
+
+    public static void AddNewReply(UserReviewsModel new_reviews)
+    {
+        try (MongoClient mongo_client = MongoClients.create(_settings))
+        {
+            MongoDatabase database = mongo_client.getDatabase(_base_name);
+            MongoCollection<Document> collection = database.getCollection("UserReviews");
+            Document new_reviews_document = new Document()
+                    .append("owner_email", new_reviews.GetOwnerEmail())
+                    .append("message", new_reviews.GetMessage())
+                    .append("departure_date", new_reviews.GetDepartureDate());
+
+            collection.insertOne(new_reviews_document);
         }
         catch (Exception ex) { ex.printStackTrace(); }
     }
