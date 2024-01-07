@@ -2,13 +2,11 @@ package reddit.fat_toad.servlets;
 
 import com.google.inject.Singleton;
 import reddit.fat_toad.services.session.Sessions;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @Singleton
 public class TokenValidationServlet extends HttpServlet
@@ -22,7 +20,6 @@ public class TokenValidationServlet extends HttpServlet
 
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
-
 
         if (NoticeToken(token))
             resp.getWriter().println("{\"status\": true}");

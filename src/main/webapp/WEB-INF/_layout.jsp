@@ -7,7 +7,6 @@
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
-
     <!-- Favicon. -->
     <link rel="icon" href="<%=context%>/img/favicon.ico" type="image/x-icon"/>
     <!-- Google Fonts. -->
@@ -30,7 +29,10 @@
             <a class="site-logo" href="<%=context_culture%>/home">
                 <img src="<%=context%>/img/logo.png" alt="logo"/>
             </a>
-            <div class="user-panel"><a href="<%=context%>/signin">Sign in</a></div>
+            <div id="without-verification" class="user-panel"><a href="<%=context%>/signin">Sign in</a></div>
+            <div id="with-verification" class="user-panel2">
+                <img src="<%=context%>/img/authors/8.jpg" alt="author"/>
+            </div>
               <!-- Responsive. -->
             <div class="nav-switch"><i class="fa fa-bars"></i></div>
             <!-- Menu. -->
@@ -61,7 +63,6 @@
                 <li><a href="<%=context_culture%>/forums">Forums</a></li>
                 <li><a href="<%=context_culture%>/contact">Contact</a></li>
             </ul>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             <p class="copyright">
                 Coursework &copy;2024 / For computer academy
                 <i class="fa fa-heart-o" aria-hidden="true"></i>

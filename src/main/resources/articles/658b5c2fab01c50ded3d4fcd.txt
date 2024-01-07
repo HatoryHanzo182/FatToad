@@ -15,7 +15,7 @@ One of the key elements of S.T.A.L.K.E.R. 2 is freedom of choice, which affects 
 Players are given the opportunity to choose their path, interact with other stalkers, make decisions that will affect the course of events,
 and create their own unique story in the Zone.
 
-<iframe width="760" height="315" src="https://www.youtube.com/embed/BB87nZ2Wldg?si=Z765Ubma0I74rEZV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+<iframe width="760" height="415" src="https://www.youtube.com/embed/BB87nZ2Wldg?si=Z765Ubma0I74rEZV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
 
 Arsenal S.T.A.L.K.E.R. 2 will include new weapons and artifacts, giving players a wider choice of survival tools.
 From unique artifacts that can change the course of battle to a variety of weapons crafted under the steely skies of the Zone,

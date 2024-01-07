@@ -81,16 +81,9 @@
                     <h4 class="comment-title">Leave a Reply</h4>
                     <form class="comment-form">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" placeholder="Email">
-                            </div>
                             <div class="col-lg-12">
-                                <input type="text" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
-                                <button class="site-btn btn-sm">Send</button>
+                                <textarea id="id-message-for-admin_toad" placeholder="Message"></textarea>
+                                <button id="id-button-send-message" class="site-btn btn-sm">Send</button>
                             </div>
                         </div>
                     </form>
@@ -99,3 +92,4 @@
         </div>
     </div>
 </section>
+<script src="<%=context%>/js/contact.js"></script>

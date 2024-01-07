@@ -45,6 +45,9 @@ public class SignInServlet extends HttpServlet
         Gson gson = new Gson();
         UsersModel user = gson.fromJson(data, UsersModel.class);
 
+        resp.setContentType("application/json");
+        resp.setCharacterEncoding("UTF-8");
+
         if(FindUserByEmail(user.GetEmail()) != null)
         {
             SHA256Hashing hasher = new SHA256Hashing();
@@ -52,29 +55,18 @@ public class SignInServlet extends HttpServlet
 
             if (hashed_password.equals(FindUserByEmail(user.GetEmail()).GetPassword()))
             {
-                resp.setContentType("application/json");
-                resp.setCharacterEncoding("UTF-8");
-
                 String token = CreateToken(user.GetEmail());
                 Sessions new_session = new Sessions();
 
-                new_session.AddSession(token);
+                new_session.AddSession(token, user.GetEmail());
 
                 resp.getWriter().println("{\"token\": \"" + token + "\", \"message\": \"🍕 Welcome!!\"}");
             }
             else
-            {
-                resp.setContentType("application/json");
-                resp.setCharacterEncoding("UTF-8");
                 resp.getWriter().println("{\"message\": \"⁉ Incorrect password.\"}");
-            }
         }
         else
-        {
-            resp.setContentType("application/json");
-            resp.setCharacterEncoding("UTF-8");
             resp.getWriter().println("{\"message\": \"😫 Sorry, but we did not find such a user in our database, please check if you entered your email correctly\"}");
-        }
     }
 
     private UsersModel FindUserByEmail(String email)  // Method for searching for a user by email.

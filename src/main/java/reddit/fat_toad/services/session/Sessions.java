@@ -13,21 +13,25 @@ public class Sessions
     private class TokenStorage
     {
         private String _token;
+        private String _owner;
         private Date _date;
 
         // <--====== Get, Set sector. ======-->
         public String GetToken() { return _token; }
+        public String GetOwner() { return _owner; }
         public Date GetDate() { return _date; }
 
         public void SetToken(String token) { this._token = token; }
+        public void SetOwner(String owner) { this._owner = owner; }
         public void SetDate(Date date) { this._date = date; }
     }
 
-    public void AddSession(String new_token)
+    public void AddSession(String new_token, String new_owner)
     {
         TokenStorage new_cell = new TokenStorage();
 
         new_cell.SetToken(new_token);
+        new_cell.SetOwner(new_owner);
         new_cell.SetDate(new Date());
 
         _sessions.add(new_cell);
@@ -60,5 +64,23 @@ public class Sessions
         }
 
         return false;
+    }
+
+    public String GetOwnerByToken(String token)
+    {
+        if (token == null)
+            return null;
+
+        Iterator<TokenStorage> iterator = _sessions.iterator();
+
+        while (iterator.hasNext())
+        {
+            TokenStorage storage_i = iterator.next();
+
+            if (storage_i.GetToken().equals(token))
+                return storage_i.GetOwner();
+        }
+
+        return null;
     }
 }

@@ -61,8 +61,7 @@ function CheckTokenValidity(token)
 {
 	const request_data = { Id: token };
 
-	fetch('/FatToad/VT_?Id=' + token,
-		{
+	return fetch('/FatToad/VT_?Id=' + token, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify(request_data)
@@ -70,16 +69,43 @@ function CheckTokenValidity(token)
 	{
 		if (!response.ok)
 			throw new Error(`HTTP error! Status: ${response.status}`);
-
 		return response.json();
 	}).then(data =>
 	{
-		if (!data.status)
+		if (data.status)
+			return true;
+		else
+		{
 			localStorage.clear();
-	}).catch(error => { console.error('Error:', error); });
+			return false;
+		}
+	}).catch(error =>
+	{
+		console.error('Error during token validation:', error);
+		throw error;
+	});
 }
 
 if (localStorage.getItem('token') != null)
 {
-	CheckTokenValidity(localStorage.getItem('token'));
+	CheckTokenValidity(localStorage.getItem('token')).then(is_valid =>
+	{
+		console.log(localStorage.getItem('token'));
+
+		if (is_valid)
+		{
+			document.getElementById('without-verification').style.display = 'none';
+			document.getElementById('with-verification').style.display = 'block';
+		}
+		else
+		{
+			document.getElementById('without-verification').style.display = 'block';
+			document.getElementById('with-verification').style.display = 'none';
+		}
+	}).catch(error => { console.error('Error during token validation:', error); });
+}
+else
+{
+	document.getElementById('without-verification').style.display = 'block';
+	document.getElementById('with-verification').style.display = 'none';
 }

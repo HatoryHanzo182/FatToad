@@ -258,6 +258,16 @@ ul, ol {
 	color: #131313;
 }
 
+.user-panel2 {
+	float: right;
+	margin-top: 40px;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #ffb320;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
 .main-menu {
 	float: right;
 	margin-right: 170px;
@@ -1249,13 +1259,22 @@ ul, ol {
 }
 
 /* Medium screen : 992px. */
+@media only screen and (min-width: 1199px) {
+	.user-panel2 {
+		margin-top: 3%;
+	}
+}
 
+/* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.main-menu {
 		margin-right: 5%;
 	}
 	.hero-slider .owl-dots {
 		max-width: 930px;
+	}
+	.user-panel2 {
+		margin-top: 3%;
 	}
 	.review-section {
 		background-position: right 10% top;
@@ -1296,6 +1315,9 @@ ul, ol {
 	.user-panel {
 		padding: 8px 15px;
 		margin-top: -0.1%;
+	}
+	.user-panel2 {
+		margin-top: 0.1%;
 	}
 	.hero-slider .hs-text h2 {
 		font-size: 50px;
@@ -1378,6 +1400,11 @@ ul, ol {
 	.user-panel {
 		display: none;
 	}
+
+	.user-panel2 {
+		display: none;
+	}
+
 	.hero-slider .hs-item {
 		height: 700px;
 	}
