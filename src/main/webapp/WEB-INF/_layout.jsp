@@ -31,7 +31,7 @@
             </a>
             <div id="without-verification" class="user-panel"><a href="<%=context%>/signin">Sign in</a></div>
             <div id="with-verification" class="user-panel2">
-                <img src="<%=context%>/img/authors/8.jpg" alt="author"/>
+                <img class="user-panel2-img" src="<%=context%>/img/authors/8.jpg" alt="author"/>
             </div>
               <!-- Responsive. -->
             <div class="nav-switch"><i class="fa fa-bars"></i></div>
