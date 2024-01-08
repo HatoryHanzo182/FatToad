@@ -21,6 +21,8 @@ import java.util.ArrayList;
 @Singleton
 public class SignInServlet extends HttpServlet
 {
+    SecretKey _secret_key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
@@ -85,11 +87,9 @@ public class SignInServlet extends HttpServlet
     // <!--=== Tokens sector. ===--!>
     private String CreateToken(String user_email)
     {
-        SecretKey secret_key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
-
         try
         {
-            return Jwts.builder().setSubject(user_email).signWith(SignatureAlgorithm.HS256, secret_key).compact();
+            return Jwts.builder().setSubject(user_email).signWith(SignatureAlgorithm.HS256, _secret_key).compact();
         }
         catch (Exception ex)
         {
