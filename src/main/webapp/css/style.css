@@ -63,7 +63,6 @@ ul, ol {
 /*---------------------
   Helper CSS
 -----------------------*/
-
 .section-title {
 	text-align: center;
 	margin-bottom: 75px;
@@ -85,16 +84,8 @@ ul, ol {
 	padding-bottom: 97px;
 }
 
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6,
-.text-white p,
-.text-white span,
-.text-white li,
-.text-white a {
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p,
+.text-white span, .text-white li, .text-white a {
 	color: #fff;
 }
 
@@ -229,7 +220,6 @@ ul, ol {
 /*------------------
   Header section
 ---------------------*/
-
 .header-section {
 	background: #131313;
 	clear: both;
@@ -307,7 +297,6 @@ ul, ol {
 /*------------------
   Hero Section
 ---------------------*/
-
 .hero-slider .hs-item {
 	height: 865px;
 	display: table;
@@ -348,8 +337,7 @@ ul, ol {
 	opacity: 0;
 }
 
-.hero-slider .owl-item.active .hs-item h2,
-.hero-slider .owl-item.active .hs-item p,
+.hero-slider .owl-item.active .hs-item h2, .hero-slider .owl-item.active .hs-item p,
 .hero-slider .owl-item.active .hs-item .site-btn {
 	top: 0;
 	opacity: 1;
@@ -401,7 +389,6 @@ ul, ol {
 /*---------------------
   Latest News section
 -----------------------*/
-
 .latest-news-section {
 	overflow: hidden;
 	display: block;
@@ -465,7 +452,6 @@ ul, ol {
 /*------------------
   Feature Section
 ---------------------*/
-
 .feature-item {
 	height: 415px;
 	position: relative;
@@ -510,7 +496,6 @@ ul, ol {
 /*----------------------
   Recent Game Section
 ------------------------*/
-
 .recent-game-section {
 	background-color: #eef2f6;
 	border-top: 1px solid #d6dee7;
@@ -645,7 +630,6 @@ ul, ol {
 /*----------------------
   Review Section
 ------------------------*/
-
 .review-section {
 	background-position: right top;
 }
@@ -714,7 +698,6 @@ ul, ol {
 /*----------------------
   Footer top Section
 ------------------------*/
-
 .footer-top-section {
 	background-image: url("../img/pattern.png");
 	background-repeat: repeat;
@@ -822,7 +805,6 @@ ul, ol {
 /*----------------------
   Footer Section
 ------------------------*/
-
 .footer-section {
 	padding: 18px 0 16px;
 	overflow: hidden;
@@ -857,7 +839,6 @@ ul, ol {
   Other Pages
 --------------------
 ====================*/
-
 .page-info-section {
 	height: 499px;
 	position: relative;

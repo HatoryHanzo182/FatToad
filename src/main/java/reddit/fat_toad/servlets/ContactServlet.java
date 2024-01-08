@@ -2,7 +2,6 @@ package reddit.fat_toad.servlets;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.stream.JsonReader;
 import com.google.inject.Singleton;
 import reddit.fat_toad.db.DB;
 import reddit.fat_toad.db.Models.UserReviewsModel;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.Date;
 
 @Singleton
@@ -33,22 +31,22 @@ public class ContactServlet extends HttpServlet
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         BufferedReader reader = req.getReader();
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder string_builder = new StringBuilder();
         String line;
 
         while ((line = reader.readLine()) != null)
-            stringBuilder.append(line);
+            string_builder.append(line);
 
-        String message = stringBuilder.toString();
+        String message = string_builder.toString();
         String token = req.getHeader("TOKEN");
 
         try
         {
             JsonParser parser = new JsonParser();
-            JsonObject jsonObject = parser.parse(message).getAsJsonObject();
+            JsonObject json_object = parser.parse(message).getAsJsonObject();
 
-            if (jsonObject.has("message"))
-                message = jsonObject.get("message").getAsString();
+            if (json_object.has("message"))
+                message = json_object.get("message").getAsString();
         }
         catch (Exception ex) { ex.printStackTrace(); }
 

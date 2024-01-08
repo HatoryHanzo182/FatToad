@@ -66,11 +66,11 @@ public class SingleBlogServlet extends HttpServlet
 
     private String GetBlogArticle(String id)
     {
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(id);
+        InputStream input_stream = getClass().getClassLoader().getResourceAsStream(id);
 
-        if (inputStream != null)
+        if (input_stream != null)
         {
-            try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream)))
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(input_stream)))
             {
                 StringBuilder content = new StringBuilder();
                 String line;

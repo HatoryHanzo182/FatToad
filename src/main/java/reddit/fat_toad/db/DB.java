@@ -11,7 +11,6 @@ import com.mongodb.client.*;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import reddit.fat_toad.db.Models.*;
-
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
@@ -80,9 +79,9 @@ public class DB
             {
                 MongoDatabase database = mongo_client.getDatabase(_base_name);
                 MongoCollection<Document> collection = database.getCollection("LatestNews");
-                FindIterable<Document> document_LatestNews = collection.find();
+                FindIterable<Document> document_latest_news = collection.find();
 
-                for (Document document : document_LatestNews)
+                for (Document document : document_latest_news)
                 {
                     LastNewsLineModel last_news_line_i = new LastNewsLineModel();
 

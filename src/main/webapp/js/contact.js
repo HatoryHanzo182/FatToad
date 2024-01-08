@@ -21,9 +21,9 @@ function SendPraiseAndSuggestions()
     {
         try
         {
-            const parsedData = JSON.parse(data);
+            const parsed_data = JSON.parse(data);
 
-            alert(parsedData.message);
+            alert(parsed_data.message);
 
             document.getElementById('id-message-for-admin_toad').value = " ";
         }
