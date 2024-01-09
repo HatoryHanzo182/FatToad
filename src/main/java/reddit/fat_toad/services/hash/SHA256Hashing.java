@@ -4,6 +4,11 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.nio.charset.StandardCharsets;
 
+/**
+ *  This class can be used to securely hash strings using the SHA-256
+ *  algorithm, which is often used to store hashed passwords in databases.
+**/
+
 public class SHA256Hashing
 {
     public String HashString(String input)

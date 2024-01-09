@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ *  The CultureFilter class is designed to determine the culture (language) based
+ *  on a URI and set the appropriate attribute in the request before passing control to the next filters or servlet.
+**/
+
 @Singleton
 public class CultureFilter implements Filter
 {

@@ -2,6 +2,12 @@ package reddit.fat_toad.db.Models;
 
 import org.bson.types.ObjectId;
 
+/**
+ *  The BlogsModel class represents the blog data model. Each object of this class
+ *  contains information about a specific blog, including ID, image
+ *  for top of page, title, small title text, latest game,
+ *  blog title, blog text, and blog status.
+**/
 public class BlogsModel
 {
     private ObjectId _id;

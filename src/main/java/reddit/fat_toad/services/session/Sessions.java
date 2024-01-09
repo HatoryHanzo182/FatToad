@@ -6,12 +6,24 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
+/**
+ *  This class is useful for managing user sessions,
+ *  issuing and validating authentication tokens, and tracking session lifetimes.
+ *  It uses the _sessions collection to store session data.
+**/
+
 public class Sessions
 {
     private static ArrayList<TokenStorage> _sessions = new ArrayList<>();
 
     private class TokenStorage
     {
+        /**
+         *  Nested inner class representing the storage of session information (token, owner, creation date).
+         *  It has methods for getting (GetToken(), GetOwner(), GetDate()) and setting
+         *  (SetToken(), SetOwner(), SetDate()) values.
+        **/
+
         private String _token;
         private String _owner;
         private Date _date;
@@ -26,8 +38,9 @@ public class Sessions
         public void SetDate(Date date) { this._date = date; }
     }
 
-    public void AddSession(String new_token, String new_owner)
-    {
+    public void AddSession(String new_token, String new_owner)  // Creates a new TokenStorage object.
+    {                                                          // Sets the token, owner, and current date for an object.
+                                                              //Adds an object to the sessions collection.
         TokenStorage new_cell = new TokenStorage();
 
         new_cell.SetToken(new_token);
@@ -37,8 +50,10 @@ public class Sessions
         _sessions.add(new_cell);
     }
 
-    public boolean ConfirmAvailability(String token_verification)
-    {
+    public boolean ConfirmAvailability(String token_verification)  // Checks the availability (validity) of the token.
+    {                                                             // Accepts a token for verification. Uses an iterator to iterate through a collection of sessions.
+                                                                 // If there is a session with a matching token: Checks if less than 4 days have passed since the session was created.
+                                                                // If yes, returns true. If not, deletes the session and returns false.
         if (token_verification == null)
             return false;
 
@@ -66,8 +81,8 @@ public class Sessions
         return false;
     }
 
-    public String GetOwnerByToken(String token)
-    {
+    public String GetOwnerByToken(String token)  // Returns the owner of the session for the given token.
+    {                                           // Uses an iterator to iterate through a collection of sessions.
         if (token == null)
             return null;
 

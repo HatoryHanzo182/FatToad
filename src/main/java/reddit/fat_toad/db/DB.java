@@ -17,6 +17,38 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ *  The DB class represents the control component for interacting with
+ *  the MongoDB database in your application. It includes methods for establishing a
+ *  connection to the database, populating data from the database into local arrays,
+ *  and methods for adding new records to the database. In addition, the class provides methods
+ *  for retrieving data from the database and makes that data available to client code.
+ *
+ *
+ *  Here is a brief description of the different sections and methods in the class:
+ *
+ *  Constructor:
+ *      The constructor calls the SetLatestNews(), SetUsers(), SetBlogs() and SetComment()
+ *      methods, which fill local arrays with data from the database.
+ *
+ *  Build Connection Sector:
+ *      BuildConnection(): Tests the database connection and configures the connection parameters
+ *      using data from the db_config.json file.
+ *
+ *  Filling in Data Sector:
+ *      SetLatestNews(), SetUsers(), SetBlogs(), SetComment():
+ *      Populate the corresponding local arrays with data from the corresponding database collections.
+ *
+ *  Receiving Data from the Client Sector:
+ *      AddNewUser(UsersModel new_user): Adds a new user to the database and to the local user array.
+ *      AddNewReply(UserReviewsModel new_reviews): Adds a new user review to the database.
+ *      Issuing Data to the Client Sector:
+ *
+ *  GetLastNewsLine(), GetUsers(), GetBlogs(), GetComments(): Provide access to local data sets for use by client code.
+ *  Note that the class uses the @Singleton annotation, which may
+ *  indicate that one instance of the class is intended to be used throughout its lifecycle.
+**/
+
 @Singleton
 public class DB
 {
@@ -37,8 +69,9 @@ public class DB
     }
 
     // <--====== Build connection sector. ======-->
-    private void BuildConnection()
-    {
+    private void BuildConnection()  // BuildConnection() prepares parameters for connecting to the MongoDB database.
+    {                              // It takes the data from the configuration file and creates a MongoClientSettings object,
+                                  // which is then likely used to create a MongoDB client to communicate with the database.
         if (CheckConnection())
         {
             ParseJsonConnectionsToTheDatabase();
@@ -48,15 +81,16 @@ public class DB
         }
     }
 
-    private Boolean CheckConnection()
-    {
+    private Boolean CheckConnection()  // Method is used to determine whether the connection should be established in the BuildConnection() method.
+    {                                 // If _connection_string is not empty, then CheckConnection()
+                                     // returns false and the connection will not be reconfigured.
         if (_connection_string.isEmpty())
             return true;
         return false;
     }
 
-    private void ParseJsonConnectionsToTheDatabase()
-    {
+    private void ParseJsonConnectionsToTheDatabase()  // The method is responsible for reading the database connection settings from
+    {                                                // the JSON file and setting the appropriate value in _connection_string.
         try (Reader reader = new InputStreamReader(Objects.requireNonNull(this.getClass().getClassLoader().getResourceAsStream("db_config.json"))))
         {
             JsonObject json_object = JsonParser.parseReader(reader).getAsJsonObject();

@@ -2,6 +2,12 @@ package reddit.fat_toad.db.Models;
 
 import org.bson.types.ObjectId;
 
+/**
+ *  CommentModel represents the data model for comments. It stores information about each comment,
+ *  including the ID, the sender, the sender's avatar, the date of the comment, the comment itself,
+ *  and the ID of the post to which the comment is associated.
+**/
+
 public class CommentModel
 {
     private ObjectId _id;

@@ -6,6 +6,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ *  The UsersModel class represents the data model for users.
+ *  It contains the following fields: _email to store the user's email address, _nickname to store
+ *  his nickname, _password to store the password, _registration_date for the registration date,
+ *  _last_activity_date for the date of last activity and _account_deletion_date for the date
+ *  the account was deleted.
+ *
+ *  The GetEmail, GetNickname, GetPassword, GetRegistrationDate, GetLastActivityDate
+ *  and GetAccountDeletionDate methods are intended to obtain the values of
+ *  the corresponding fields, and the SetEmail, SetNickname, SetPassword,
+ *  SetRegistrationDate, SetLastActivityDate and SetAccountDeletionDate methods are
+ *  intended to set the values of these fields.
+ *
+ *  Additionally, the class has SetRegistrationDate, SetLastActivityDate, and SetAccountDeletionDate
+ *  methods that accept strings in the format "yyyy-MM-dd'T'HH:mm:ss.SSSX" and convert
+ *  them to Date objects. These methods also handle cases where the string "null" is passed.
+**/
+
 public class UsersModel
 {
     @SerializedName("email")
