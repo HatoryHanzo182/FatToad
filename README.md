@@ -3,7 +3,7 @@
 ## Project description
 "Fat Toad" is a course project created as part of training at STEP Academy. The project is a web application covering various functional areas and demonstrating development skills.
 
-![Снимок экрана 2024-01-09 233558.jpg](..%2F..%2F..%2F..%2FUsers%2Fscrin%2FDesktop%2F%D1%ED%E8%EC%EE%EA%20%FD%EA%F0%E0%ED%E0%202024-01-09%20233558.jpg)
+![Снимок экрана 2024-01-09 233558](https://github.com/HatoryHanzo182/FatToad/assets/55142468/a6448857-6435-4436-b599-672b44138da7)
 
 ## Main characteristics
 - **Theme:** Gaming.
